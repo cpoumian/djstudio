@@ -1,6 +1,7 @@
 body {
+	background-color: $mainBlack;
+	color: $mainBlack;
 	font-family: 'Montserrat', sans-serif;
-	color: #000;
 	list-style-type: none;
 }
 
