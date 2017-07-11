@@ -5,7 +5,12 @@
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/large/mixing-deep-main-L.jpg");
 		background-size: cover;
-	} /*@mixin atSmall*/
+	} /* background image - atSmall */
+
+	@mixin atSmallDouble {
+		background: url("../../assets/images/backgrounds/large/mixing-deep-main-L@2x.jpg");
+		background-size: cover;
+	} /* background image - atSmallDouble */
 
 	&__brands-container {
 		display: none;
@@ -24,11 +29,11 @@
 			&__brand {
 				padding: 20px 10px;
 				flex: 0 1 auto;
-			} /*&__brand*/
+			} /* &__brand */
 
-		} /*@mixin atSmall*/
+		} /* brands - atSmall */
 
-	} /*&__brands-container*/
+	} /* &__brands-container */
 
 
-} /*.large-hero*/
+} /* .large-hero */

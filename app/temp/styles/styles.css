@@ -449,6 +449,16 @@ template {
   display: none;
 }
 
+/* Media queries */
+
+/* Small screens */
+
+/* Medium screens */
+
+/* Large screens */
+
+/* Other mixins */
+
 body {
 	background-color: #000;
 	color: #000;
@@ -463,7 +473,7 @@ img {
 
 .large-hero {
 	position: relative;
-	height: 100vh; /*&__brands-container*/
+	height: 100vh; /* &__brands-container */
 
 
 }
@@ -476,12 +486,24 @@ img {
 
 
 }
-	}
+		}
 
-/*@mixin atSmall*/
+/* background image - atSmall */
+
+@media (min-width: 530px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 530px) and (min-resolution: 192dpi) {
+
+.large-hero {
+		background: url("../../assets/images/backgrounds/large/mixing-deep-main-L@2x.jpg");
+		background-size: cover
+
+
+}
+		}
+
+/* background image - atSmallDouble */
 
 .large-hero__brands-container {
-		display: none; /*@mixin atSmall*/
+		display: none; /* brands - atSmall */
 
 	}
 
@@ -503,7 +525,7 @@ img {
 			left: 0;
 			bottom: 0;
 			background-color: #000;
-			width: 50% /*&__brand*/
+			width: 50% /* &__brand */
 
 	}
 			
@@ -513,9 +535,9 @@ img {
 				    -ms-flex: 0 1 auto;
 				        flex: 0 1 auto;
 			}
-	}
+		}
 
-/*.large-hero*/
+/* .large-hero */
 
 .btn {
 	background-color: #FFFF87;

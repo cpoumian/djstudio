@@ -1,17 +1,40 @@
-@define-mixin atSmall {
-	@media (min-width: 530px) {
-		@mixin-content;
+/* Media queries */
+
+	/* Small screens */
+	@define-mixin atSmall {
+		@media (min-width: 530px) {
+			@mixin-content;
+		}
 	}
-}
+	@define-mixin atSmallDouble {
+		@media (min-width: 530px) and (min-resolution: 192dpi) {
+			@mixin-content;
+		}
+	}
 
-@define-mixin atMedium {
-	@media (min-width: 800px) {
-		@mixin-content;
-	}	
-}
+	/* Medium screens */
+	@define-mixin atMedium {
+		@media (min-width: 800px) {
+			@mixin-content;
+		}	
+	}
+	@define-mixin atMediumDouble {
+		@media (min-width: 800px) and (min-resolution: 192dpi) {
+			@mixin-content;
+		}	
+	}
 
-@define-mixin atLarge {
-	@media (min-width: 1200px) {
-		@mixin-content;
-	}	
-}
+	/* Large screens */
+	@define-mixin atLarge {
+		@media (min-width: 1200px) {
+			@mixin-content;
+		}	
+	}
+
+	@define-mixin atLargeDouble {
+		@media (min-width: 1200px) and (min-resolution: 192dpi){
+			@mixin-content;
+		}	
+	}
+
+/* Other mixins */
