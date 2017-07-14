@@ -1,0 +1,26 @@
+#about {
+	display: block;
+	position: relative;
+	height: 50vh;
+	background-color: $mainWhite;
+
+	@mixin atSmall {
+		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M.jpg");
+		background-size: cover;
+	} /* background image - atSmall */
+
+	@mixin atSmallDouble {
+		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M@2x.jpg");
+		background-size: cover;
+	}
+
+	.wrapper {
+		height: 100%;
+		margin: auto 0;
+	}
+
+	.text-box {
+		
+	} /* #about .text-box */
+
+} /* #about */

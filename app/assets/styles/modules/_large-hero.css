@@ -1,4 +1,5 @@
 .large-hero {
+	display: block;
 	position: relative;
 	height: 100vh;
 
@@ -25,15 +26,14 @@
 			bottom: 0;
 			background-color: $mainBlack;
 			width: 50%;
-			
-			&__brand {
-				padding: 20px 10px;
-				flex: 0 1 auto;
-			} /* &__brand */
-
-		} /* brands - atSmall */
+			height: 15%;
+		} /* brands-contaner atSmall */
 
 	} /* &__brands-container */
 
+	&__brand {
+				padding: 35px 10px;
+				flex: 0 1 auto;
+	} /* &__brand */
 
 } /* .large-hero */

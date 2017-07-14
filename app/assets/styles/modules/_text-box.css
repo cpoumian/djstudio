@@ -1,0 +1,16 @@
+.text-box {
+	display: none;
+
+	@mixin atSmall {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	background-color: $mainWhite;
+	opacity: 0.85;
+	width: 50%;
+	height: 50%;
+	}
+
+} /* .text-box */
