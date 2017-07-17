@@ -2,12 +2,12 @@
 
 	/* Small screens */
 	@define-mixin atSmall {
-		@media (min-width: 530px) {
+		@media (min-width: 550px) {
 			@mixin-content;
 		}
 	}
 	@define-mixin atSmallDouble {
-		@media (min-width: 530px) and (min-resolution: 192dpi) {
+		@media (min-width: 550px) and (min-resolution: 192dpi) {
 			@mixin-content;
 		}
 	}

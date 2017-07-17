@@ -1,0 +1,22 @@
+.social {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	flex-wrap: nowrap;
+
+	@mixin atSmall {
+		flex-wrap: wrap;		
+	}
+
+	&--icon {
+		flex-shrink: 1;
+		width: $iconSizeMob;
+		padding: $spaceStd;
+
+			@mixin atSmall {
+				width: $iconSize;	
+			}
+
+	} /* &--icon */
+
+}

@@ -1,12 +1,14 @@
 #about {
 	display: block;
 	position: relative;
-	height: 50vh;
+	height: 100vh;
 	background-color: $mainWhite;
+	/*padding: $spaceStd 0;*/
 
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M.jpg");
 		background-size: cover;
+		height: 50vh;
 	} /* background image - atSmall */
 
 	@mixin atSmallDouble {
@@ -19,8 +21,46 @@
 		margin: auto 0;
 	}
 
-	.text-box {
-		
-	} /* #about .text-box */
+		.text-box {
+
+			h2 {
+				color: $lightBlue;
+				margin-top: 0;
+				margin-bottom: $spaceStd;
+				font-size: $headingMob;
+				font-weight: 400;
+			}
+
+			p {
+				font-size: $textSizeMob;
+				line-height: $lineHeight;
+				text-align: left;
+				margin-top: $spaceHlf;
+				margin-bottom: $spaceDbl;
+				max-width: 90%;
+			}
+
+			@mixin atSmall {				
+				padding: $spaceDbl;
+
+				h2 {
+					font-size: $heading;
+				}
+
+				p {
+					font-size: $textSize;
+					margin-top: 0;
+					margin-bottom: 0;
+					width: 75%;
+					
+				}
+
+				.social {
+					align-self: flex-end;
+				}				
+
+			} /* @mixin atSmall */
+			
+		} /* #about .text-box */
 
 } /* #about */

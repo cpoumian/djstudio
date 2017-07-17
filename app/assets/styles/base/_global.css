@@ -1,7 +1,12 @@
+html { 
+	font-size: 62.5%; 
+} 
+
 body {
 	background-color: $mainBlack;
 	color: $mainBlack;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 1.8rem;
 	list-style-type: none;
 }
 

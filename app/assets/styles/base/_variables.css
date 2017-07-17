@@ -1,4 +1,21 @@
+/* Colors */
 $mainYellow: #FFFF87;
 $mainBlack:  #000;
 $mainWhite:  #FFF;
 $lightBlue:  #33A4DE;
+
+/* Layout */
+$lineHeight: 2.8rem;
+$spaceHlf: 1.12rem;
+$spaceStd: 2.25rem;
+$spaceDbl: 4.5rem;
+
+/* Font Sizes */
+$heading: 4.5rem;
+$headingMob: 3.8rem;
+$textSize: 2rem;
+$textSizeMob: 1.8rem;
+
+/* other */
+$iconSize: 65px;
+$iconSizeMob: 50px;
