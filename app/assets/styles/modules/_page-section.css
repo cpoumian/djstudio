@@ -5,4 +5,9 @@
 		padding: $spaceDbl 0;		
 	}
 
+	&--black {
+		background-color: $mainBlack;
+		color: $mainWhite;
+	}
+
 } /* .page-section */

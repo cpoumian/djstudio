@@ -1,0 +1,12 @@
+#services {
+	
+	h2 {
+		font-size: $headingXsmall;
+		text-align: center;
+
+		@mixin atSmall {
+			font-size: $heading;
+		}
+	}
+
+} /* #services */

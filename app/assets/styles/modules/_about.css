@@ -27,12 +27,12 @@
 				color: $lightBlue;
 				margin-top: 0;
 				margin-bottom: $spaceStd;
-				font-size: $headingMob;
+				font-size: $headingSmall;
 				font-weight: 400;
 			}
 
 			p {
-				font-size: $textSizeMob;
+				font-size: $textSizeSmall;
 				line-height: $lineHeight;
 				text-align: left;
 				margin-top: $spaceHlf;

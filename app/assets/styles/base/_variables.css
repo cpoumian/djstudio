@@ -12,10 +12,12 @@ $spaceDbl: 4.5rem;
 
 /* Font Sizes */
 $heading: 4.5rem;
-$headingMob: 3.8rem;
+$headingSmall: 3.8rem;
+$headingXsmall: 3rem;
 $textSize: 2rem;
-$textSizeMob: 1.8rem;
+$textSizeSmall: 1.8rem;
 
 /* other */
 $iconSize: 65px;
-$iconSizeMob: 50px;
+$iconSizeSmall: 50px;
+$iconSizeLarge: 85px;

@@ -3,7 +3,7 @@ html {
 } 
 
 body {
-	background-color: $mainBlack;
+	background-color: $mainWhite;
 	color: $mainBlack;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.8rem;

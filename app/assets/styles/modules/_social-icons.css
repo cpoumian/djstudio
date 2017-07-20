@@ -10,7 +10,7 @@
 
 	&--icon {
 		flex-shrink: 1;
-		width: $iconSizeMob;
+		width: $iconSizeSmall;
 		padding: $spaceStd;
 
 			@mixin atSmall {

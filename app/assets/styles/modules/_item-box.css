@@ -1,0 +1,19 @@
+.item-box {
+	position: relative;
+	padding: $spaceHlf;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	@mixin atSmall {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		width: 80%;
+		max-width: 80%;
+	}
+
+}
