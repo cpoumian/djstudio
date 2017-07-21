@@ -465,7 +465,11 @@ template {
 
 /* Large screens */
 
-/* Other mixins */
+/* Back images */
+
+/* @define-mixin djMixBG */
+
+/* @define-mixin productionBG */
 
 html { 
 	font-size: 62.5%; 
@@ -530,7 +534,7 @@ img {
 @media (min-width: 550px) {
 
 .page-section {
-		padding: 4.5rem 0
+		padding: 2.25rem 0
 
 }
 		}
@@ -573,8 +577,7 @@ img {
 			-webkit-box-align: start;
 			    -ms-flex-align: start;
 			        align-items: flex-start;
-			opacity: 0.85;
-			width: 75%
+			opacity: 0.85
 
 }
 		}
@@ -588,7 +591,9 @@ img {
 .large-hero {
 	display: block;
 	position: relative;
-	height: 100vh; /* &__brand */
+	height: 100vh; /* background image - atSmallDouble */
+
+	/* ¡ .brands-container and .brand used to be here ! */
 
 }
 
@@ -612,16 +617,16 @@ img {
 }
 		}
 
-/* background image - atSmallDouble */
+/* .large-hero */
 
-.large-hero__brands-container {
+.brands-container {
 		display: none; /* brands-contaner atSmall */
 
 	}
 
 @media (min-width: 550px) {
 
-.large-hero__brands-container {
+.brands-container {
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
@@ -643,16 +648,16 @@ img {
 	}
 		}
 
-/* &__brands-container */
+/* .brands-container */
 
-.large-hero__brand {
+.brand {
 				padding: 35px 10px;
 				-webkit-box-flex: 0;
 				    -ms-flex: 0 1 auto;
 				        flex: 0 1 auto;
 	}
 
-/* .large-hero */
+/* .brand */
 
 #about {
 	display: block;
@@ -669,7 +674,7 @@ img {
 #about {
 		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M.jpg");
 		background-size: cover;
-		height: 50vh
+		height: 60vh
 
 }
 		}
@@ -714,7 +719,10 @@ img {
 @media (min-width: 550px) {
 
 #about .text-box {				
-				padding: 4.5rem
+				margin: 2.25rem 0;
+				padding: 2.25rem;
+				width: 800px;
+				min-width: 400px
 			
 		}
 
@@ -751,11 +759,17 @@ img {
 	        align-items: center;
 	-ms-flex-wrap: nowrap;
 	    flex-wrap: nowrap;
-	max-width: 100%; /* .service */
+	max-width: 100%;
+	margin: .6rem 0; /* .service */
 
 }
 
 @media (min-width: 550px) {
+
+.item {
+		margin: 0 0
+
+}
 		}
 
 .item .icon {
@@ -869,9 +883,23 @@ img {
 }
 		}
 
+#services {
+	height: 100vh;
+
+}
+
+@media (min-width: 550px) {
+
+#services {
+		height: 40vh
+
+}
+		}
+
 #services h2 {
 		font-size: 3rem;
 		text-align: center;
+		margin: 2.25rem 0;
 	}
 
 @media (min-width: 550px) {
@@ -882,3 +910,97 @@ img {
 		}
 
 /* #services */
+
+#course {
+	display: block;
+	position: relative;
+	padding: 0;
+	height: 100vh; /* .text-box */
+
+}
+
+@media (min-width: 550px) {
+
+#course {
+			height: 85vh
+
+}
+		}
+
+#course.dj-mix {
+		/* background image - atSmallDouble */
+	}
+
+@media (min-width: 550px) {
+
+#course.dj-mix {
+		background: url("../../assets/images/backgrounds/large/mixing-mid-fem-L.jpg");
+		background-size: cover;
+	}
+		}
+
+/* background image - atSmall */
+
+@media (min-width: 550px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 550px) and (min-resolution: 192dpi) {
+
+#course.dj-mix {
+		background: url("../../assets/images/backgrounds/large/mixing-mid-fem-L@2x.jpg");
+		background-size: cover;
+	}
+		}
+
+#course.production {
+		/* background image - atSmallDouble */
+	}
+
+@media (min-width: 550px) {
+
+#course.production {
+		background: url("../../assets/images/backgrounds/large/vinyl-mid-L.jpg");
+		background-size: cover;
+	}
+		}
+
+/* background image - atSmall */
+
+@media (min-width: 550px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 550px) and (min-resolution: 192dpi) {
+
+#course.production {
+		background: url("../../assets/images/backgrounds/large/vinyl-mid-L@2x.jpg");
+		background-size: cover;
+	}
+		}
+
+#course .wrapper {
+		height: 100%;
+		margin: 0 auto;
+	}
+
+#course .text-box { /* @mixin atSmall */
+
+	}
+
+@media (min-width: 550px) {
+
+#course .text-box {
+			width: 400px;
+			min-width: 400px;
+			padding: 0
+
+	}
+		
+			#course .text-box h2 {
+				color: #FFF;
+				background-color: #000;
+				margin: 0;
+				width: calc(100% - 1.12rem);; 
+				padding: 1.12rem 0 1.12rem 1.12rem;
+			}
+
+			#course .text-box p {
+				padding: 1.12rem;
+				line-height: 2.8rem;
+			}
+		}
+
+/* #course */

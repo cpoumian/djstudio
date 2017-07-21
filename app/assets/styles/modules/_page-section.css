@@ -2,7 +2,7 @@
 	padding: $spaceStd 0;
 
 	@mixin atSmall {
-		padding: $spaceDbl 0;		
+		padding: $spaceStd 0;		
 	}
 
 	&--black {

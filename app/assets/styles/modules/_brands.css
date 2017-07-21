@@ -1,0 +1,22 @@
+.brands-container {
+		display: none;
+
+		@mixin atSmall {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: $mainBlack;
+			width: 50%;
+			height: 15%;
+		} /* brands-contaner atSmall */
+
+	} /* .brands-container */
+
+	.brand {
+				padding: 35px 10px;
+				flex: 0 1 auto;
+	} /* .brand */

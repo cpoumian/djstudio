@@ -1,8 +1,14 @@
 #services {
-	
+	height: 100vh;
+
+	@mixin atSmall {
+		height: 40vh;
+	}
+
 	h2 {
 		font-size: $headingXsmall;
 		text-align: center;
+		margin: $spaceStd 0;
 
 		@mixin atSmall {
 			font-size: $heading;

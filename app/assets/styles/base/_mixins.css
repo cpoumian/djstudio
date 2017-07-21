@@ -37,4 +37,32 @@
 		}	
 	}
 
-/* Other mixins */
+/* Back images */
+
+@define-mixin djMixBG {
+
+	@mixin atSmall {
+		background: url("../../assets/images/backgrounds/large/mixing-mid-fem-L.jpg");
+		background-size: cover;
+	} /* background image - atSmall */
+
+	@mixin atSmallDouble {
+		background: url("../../assets/images/backgrounds/large/mixing-mid-fem-L@2x.jpg");
+		background-size: cover;
+	} /* background image - atSmallDouble */
+
+} /* @define-mixin djMixBG */
+
+@define-mixin productionBG {
+
+	@mixin atSmall {
+		background: url("../../assets/images/backgrounds/large/vinyl-mid-L.jpg");
+		background-size: cover;
+	} /* background image - atSmall */
+
+	@mixin atSmallDouble {
+		background: url("../../assets/images/backgrounds/large/vinyl-mid-L@2x.jpg");
+		background-size: cover;
+	} /* background image - atSmallDouble */
+	
+} /* @define-mixin productionBG */

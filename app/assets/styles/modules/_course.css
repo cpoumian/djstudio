@@ -1,0 +1,48 @@
+#course {
+	display: block;
+	position: relative;
+	padding: 0;
+	height: 100vh;
+
+		@mixin atSmall {
+			height: 85vh;
+		}
+
+	&.dj-mix {
+		@mixin djMixBG;
+	}
+
+	&.production {
+		@mixin productionBG;
+	}
+
+	.wrapper {
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	.text-box {
+	
+		@mixin atSmall {
+			width: $boxSize;
+			min-width: $boxSize;
+			padding: 0;
+		
+			h2 {
+				color: $mainWhite;
+				background-color: $mainBlack;
+				margin: 0;
+				width: calc(100% - $spaceHlf);; 
+				padding: $spaceHlf 0 $spaceHlf $spaceHlf;
+			}
+
+			p {
+				padding: $spaceHlf;
+				line-height: $lineHeight;
+			}
+
+		} /* @mixin atSmall */
+
+	} /* .text-box */
+
+} /* #course */

@@ -8,7 +8,7 @@
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M.jpg");
 		background-size: cover;
-		height: 50vh;
+		height: 60vh;
 	} /* background image - atSmall */
 
 	@mixin atSmallDouble {
@@ -41,7 +41,10 @@
 			}
 
 			@mixin atSmall {				
-				padding: $spaceDbl;
+				margin: $spaceStd 0;
+				padding: $spaceStd;
+				width: $boxSizeLarge;
+				min-width: $boxSize;
 
 				h2 {
 					font-size: $heading;

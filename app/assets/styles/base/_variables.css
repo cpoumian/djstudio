@@ -6,6 +6,8 @@ $lightBlue:  #33A4DE;
 
 /* Layout */
 $lineHeight: 2.8rem;
+
+$spaceQtr: .6rem;
 $spaceHlf: 1.12rem;
 $spaceStd: 2.25rem;
 $spaceDbl: 4.5rem;
@@ -18,6 +20,9 @@ $textSize: 2rem;
 $textSizeSmall: 1.8rem;
 
 /* other */
+$boxSize: 400px;
+$boxSizeLarge: 800px;
+
 $iconSize: 65px;
 $iconSizeSmall: 50px;
 $iconSizeLarge: 85px;

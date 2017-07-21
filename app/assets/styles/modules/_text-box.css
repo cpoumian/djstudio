@@ -14,7 +14,6 @@
 		@mixin atSmall {
 			align-items: flex-start;
 			opacity: 0.85;
-			width: 75%;
 		}
 
 } /* .text-box */

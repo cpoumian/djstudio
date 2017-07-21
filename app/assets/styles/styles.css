@@ -10,8 +10,10 @@
 @import "modules/_text-box";
 @import "modules/_main-header";
 @import "modules/_large-hero";
+@import "modules/_brands";
 @import "modules/_about";
 @import "modules/_item";
 @import "modules/_social-icons";
 @import "modules/_item-box";
 @import "modules/_services";
+@import "modules/_course";

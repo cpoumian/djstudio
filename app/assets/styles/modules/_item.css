@@ -4,9 +4,10 @@
 	align-items: center;
 	flex-wrap: nowrap;
 	max-width: 100%;
+	margin: $spaceQtr 0;
 
 	@mixin atSmall {
-		
+		margin: 0 0;
 	}
 
 	.icon {
