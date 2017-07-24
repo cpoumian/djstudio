@@ -19,30 +19,84 @@
 	.wrapper {
 		height: 100%;
 		margin: 0 auto;
+		align-itmes: center;
+
+		@mixin atSmall {
+			justify-content: space-around;
+		}
+
 	}
 
 	.text-box {
+			align-items: left;
+
+			h2 {
+				font-size: $headingSmall;
+				font-weight: $weightSemibold;
+				color: $mainBlack;
+				text-align: left;
+				margin-bottom: 0;
+			}
+
+			p {
+				font-size: $textSizeSmall;
+				font-weight: $weightLight;
+				line-height: $lineHeight;
+				text-align: left;
+			}
 	
 		@mixin atSmall {
-			width: $boxSize;
+			width: $boxSizeMedium;
 			min-width: $boxSize;
 			padding: 0;
 		
 			h2 {
+				font-size: $headingXsmall;
+				font-weight: $weightSemibold;
 				color: $mainWhite;
+				opacity: 1;
 				background-color: $mainBlack;
 				margin: 0;
 				width: calc(100% - $spaceHlf);; 
-				padding: $spaceHlf 0 $spaceHlf $spaceHlf;
+				padding: $spaceStd 0 $spaceStd $spaceHlf;
 			}
 
 			p {
-				padding: $spaceHlf;
+				font-size: $textSize;
+				font-weight: $weightLight;
 				line-height: $lineHeight;
+				text-align: left;
+				margin: $spaceHlf 0;
+				padding: $spaceStd;
 			}
 
 		} /* @mixin atSmall */
 
 	} /* .text-box */
+
+	.btn--large {
+		width: ;
+		font-size: $textSizeSmall;
+		text-align: center;
+		margin-left: 0;
+		margin-right: 0;
+
+		@mixin atSmall {
+			font-size: $textSize;
+			margin-left: $spaceStd;
+			margin-right: $spaceStd;
+		}
+
+	} /* .btn--large */
+
+	.brands-container {
+		
+		@mixin atSmall {
+			left: initial;
+			right: 0;
+			width: 33%;
+		} /* @mixin atSmall */
+
+	} /* .brands-container */
 
 } /* #course */

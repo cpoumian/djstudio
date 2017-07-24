@@ -1,28 +1,40 @@
 /* Colors */
 $mainYellow: #FFFF87;
+$darkYellow: #A0A054;
 $mainBlack:  #000;
 $mainWhite:  #FFF;
 $lightBlue:  #33A4DE;
 
 /* Layout */
-$lineHeight: 2.8rem;
+$lineHeight: 3.2rem;
 
 $spaceQtr: .6rem;
 $spaceHlf: 1.12rem;
 $spaceStd: 2.25rem;
 $spaceDbl: 4.5rem;
 
-/* Font Sizes */
+/* Font sizes */
 $heading: 4.5rem;
 $headingSmall: 3.8rem;
 $headingXsmall: 3rem;
 $textSize: 2rem;
 $textSizeSmall: 1.8rem;
 
+/*Font weights*/
+$weightLight: 300;
+$weightRegular: 400;
+$weightSemibold: 500;
+$weightBold: 600;
+$weightExtrabold: 700;
+
 /* other */
 $boxSize: 400px;
+$boxSizeMedium: 600px;
 $boxSizeLarge: 800px;
 
 $iconSize: 65px;
 $iconSizeSmall: 50px;
 $iconSizeLarge: 85px;
+
+/* transition speeds */
+$medium: .4s;

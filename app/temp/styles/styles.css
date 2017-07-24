@@ -453,9 +453,13 @@ template {
 
 /* Layout */
 
-/* Font Sizes */
+/* Font sizes */
+
+/*Font weights*/
 
 /* other */
+
+/* transition speeds */
 
 /* Media queries */
 
@@ -492,18 +496,31 @@ img {
 	background-color: #FFFF87;
 	color: #000;
 	text-decoration: none;
-	padding: .75rem 1.2rem;
+	padding: .6rem 1.12rem;
 	display: inline-block;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+
 }
+
+.btn:hover {
+		background-color: #A0A054;
+		color: #FFFF87;
+	}
 
 .btn--blue {
 		background-color: #33A4DE;
 	}
 
 .btn--large {
-		font-size: 1.25rem;
-		padding: 1.1rem 1.9rem;
+		font-size: 2rem;
+		font-weight: 600;
+		line-height: 3.2rem;
+		padding: 1.12rem 4.5rem;
+		border-radius: 15px;
 	}
+
+/* .btn */
 
 .wrapper {
 		padding-left: 2.25rem;
@@ -620,7 +637,7 @@ img {
 /* .large-hero */
 
 .brands-container {
-		display: none; /* brands-contaner atSmall */
+		display: none; /* brands-container atSmall */
 
 	}
 
@@ -638,6 +655,9 @@ img {
 			    flex-wrap: nowrap;
 			-ms-flex-pack: distribute;
 			    justify-content: space-around;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
 			position: absolute;
 			left: 0;
 			bottom: 0;
@@ -651,11 +671,47 @@ img {
 /* .brands-container */
 
 .brand {
-				padding: 35px 10px;
-				-webkit-box-flex: 0;
-				    -ms-flex: 0 1 auto;
-				        flex: 0 1 auto;
+		display: none; /* @mixin atSmall */
+
 	}
+
+@media (min-width: 550px) {
+
+.brand {
+		display: inline-block;				
+
+
+				-webkit-box-flex: 0;				
+
+
+				    -ms-flex: 0 1 auto;				
+
+
+				        flex: 0 1 auto
+
+	}
+
+				
+				.brand--pioneer {
+					width: 132px;
+					height: 20px;
+				}
+
+				.brand--native {
+					width: 50px;
+					height: 30px;	
+				}
+				
+				.brand--live {
+					width: 125px;
+					height: 20px;	
+				}
+
+				.brand--live-large {
+					width: 250px;
+					height: 50px;	
+				}
+		}
 
 /* .brand */
 
@@ -704,12 +760,12 @@ img {
 				margin-top: 0;
 				margin-bottom: 2.25rem;
 				font-size: 3.8rem;
-				font-weight: 400;
+				ont-weight: 500;
 			}
 
 #about .text-box p {
 				font-size: 1.8rem;
-				line-height: 2.8rem;
+				line-height: 3.2rem;
 				text-align: left;
 				margin-top: 1.12rem;
 				margin-bottom: 4.5rem;
@@ -915,7 +971,7 @@ img {
 	display: block;
 	position: relative;
 	padding: 0;
-	height: 100vh; /* .text-box */
+	height: 100vh; /* .brands-container */
 
 }
 
@@ -974,33 +1030,106 @@ img {
 #course .wrapper {
 		height: 100%;
 		margin: 0 auto;
-	}
-
-#course .text-box { /* @mixin atSmall */
+		align-itmes: center;
 
 	}
 
 @media (min-width: 550px) {
 
+#course .wrapper {
+			-ms-flex-pack: distribute;
+			    justify-content: space-around
+
+	}
+		}
+
 #course .text-box {
-			width: 400px;
+			-webkit-box-align: left;
+			    -ms-flex-align: left;
+			        align-items: left; /* @mixin atSmall */
+
+	}
+
+#course .text-box h2 {
+				font-size: 3.8rem;
+				font-weight: 500;
+				color: #000;
+				text-align: left;
+				margin-bottom: 0;
+			}
+
+#course .text-box p {
+				font-size: 1.8rem;
+				font-weight: 300;
+				line-height: 3.2rem;
+				text-align: left;
+			}
+
+@media (min-width: 550px) {
+
+#course .text-box {
+			width: 600px;
 			min-width: 400px;
 			padding: 0
 
 	}
 		
 			#course .text-box h2 {
+				font-size: 3rem;
+				font-weight: 500;
 				color: #FFF;
+				opacity: 1;
 				background-color: #000;
 				margin: 0;
 				width: calc(100% - 1.12rem);; 
-				padding: 1.12rem 0 1.12rem 1.12rem;
+				padding: 2.25rem 0 2.25rem 1.12rem;
 			}
 
 			#course .text-box p {
-				padding: 1.12rem;
-				line-height: 2.8rem;
+				font-size: 2rem;
+				font-weight: 300;
+				line-height: 3.2rem;
+				text-align: left;
+				margin: 1.12rem 0;
+				padding: 2.25rem;
 			}
+		}
+
+/* .text-box */
+
+#course .btn--large {
+		width: ;
+		font-size: 1.8rem;
+		text-align: center;
+		margin-left: 0;
+		margin-right: 0;
+
+	}
+
+@media (min-width: 550px) {
+
+#course .btn--large {
+			font-size: 2rem;
+			margin-left: 2.25rem;
+			margin-right: 2.25rem
+
+	}
+		}
+
+/* .btn--large */
+
+#course .brands-container { /* @mixin atSmall */
+
+	}
+
+@media (min-width: 550px) {
+
+#course .brands-container {
+			left: initial;
+			right: 0;
+			width: 33%
+
+	}
 		}
 
 /* #course */

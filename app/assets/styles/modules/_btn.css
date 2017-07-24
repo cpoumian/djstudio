@@ -2,15 +2,25 @@
 	background-color: $mainYellow;
 	color: $mainBlack;
 	text-decoration: none;
-	padding: .75rem 1.2rem;
+	padding: $spaceQtr $spaceHlf;
 	display: inline-block;
+	transition: all $medium;
+
+	&:hover {
+		background-color: $darkYellow;
+		color: $mainYellow;
+	}
 
 	&--blue {
 		background-color: $lightBlue;
 	}
 
 	&--large {
-		font-size: 1.25rem;
-		padding: 1.1rem 1.9rem;
+		font-size: $textSize;
+		font-weight: $weightBold;
+		line-height: $lineHeight;
+		padding: $spaceHlf $spaceDbl;
+		border-radius: 15px;
 	}
-}
+
+} /* .btn */

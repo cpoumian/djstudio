@@ -6,17 +6,47 @@
 			flex-direction: row;
 			flex-wrap: nowrap;
 			justify-content: space-around;
+			align-items: center;
 			position: absolute;
 			left: 0;
 			bottom: 0;
 			background-color: $mainBlack;
 			width: 50%;
 			height: 15%;
-		} /* brands-contaner atSmall */
+		} /* brands-container atSmall */
 
 	} /* .brands-container */
 
 	.brand {
-				padding: 35px 10px;
+		display: none;
+
+		@mixin atSmall {
+		display: inline-block;
+
+				
+				&--pioneer {
+					width: 132px;
+					height: 20px;
+				}
+
+				&--native {
+					width: 50px;
+					height: 30px;	
+				}
+				
+				&--live {
+					width: 125px;
+					height: 20px;	
+				}
+
+				&--live-large {
+					width: 250px;
+					height: 50px;	
+				}				
+
+
 				flex: 0 1 auto;
+
+		} /* @mixin atSmall */
+
 	} /* .brand */
