@@ -3,7 +3,6 @@
 	position: relative;
 	height: 100vh;
 	background-color: $mainWhite;
-	/*padding: $spaceStd 0;*/
 
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M.jpg");
@@ -28,7 +27,7 @@
 				margin-top: 0;
 				margin-bottom: $spaceStd;
 				font-size: $headingSmall;
-				ont-weight: $weightSemibold;
+				font-weight: $weightSemibold;
 			}
 
 			p {

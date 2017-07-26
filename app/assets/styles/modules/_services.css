@@ -2,7 +2,7 @@
 	height: 100vh;
 
 	@mixin atSmall {
-		height: 40vh;
+		height: 60vh;
 	}
 
 	h2 {

@@ -1,0 +1,86 @@
+#location {
+	display: block;
+	position: relative;
+	padding: 0;
+	height: 100vh;
+
+		@mixin atSmall {
+			height: 60vh;
+		}
+
+	.wrapper {
+		height: 100%;
+		margin: 0 auto;
+		align-itmes: center;
+
+		@mixin atSmall {
+			justify-content: space-around;
+		}
+
+	}
+
+	.text-box {
+			align-items: left;
+			border: .5px solid $mainBlack;
+
+			h2 {
+				font-size: $headingSmall;
+				font-weight: $weightSemibold;
+				color: $mainBlack;
+				text-align: left;
+				margin-bottom: 0;
+			}
+
+			p {
+				font-size: $textSizeSmall;
+				font-weight: $weightLight;
+				line-height: $lineHeight;
+				text-align: left;
+			}
+	
+		@mixin atSmall {
+			width: $boxSize;
+			min-width: $boxSize;
+			padding: 0;
+		
+			h2 {
+				font-size: $headingXsmall;
+				font-weight: $weightSemibold;
+				color: $mainWhite;
+				opacity: 1;
+				background-color: $mainBlack;
+				margin: 0;
+				width: calc(100% - $spaceHlf);; 
+				padding: $spaceStd 0 $spaceStd $spaceHlf;
+			}
+
+			p {
+				font-size: $textSize;
+				font-weight: $weightLight;
+				line-height: $lineHeight;
+				text-align: left;
+				margin: $spaceHlf 0;
+				padding: $spaceStd;
+			}
+
+		} /* @mixin atSmall */
+
+	} /* .text-box */
+
+	.map {
+
+		@mixin atSmall {
+			width: $boxSize;
+			border: .5px solid $mainBlack;
+		}
+
+		.hints {
+			font-size: $textSizeXsmall;
+			font-weight: $weightLight;
+			padding: .2rem $spaceQtr;
+			line-height: $lineHeightSmall;
+		}
+		
+	} /* .map */
+
+} /* #location */
