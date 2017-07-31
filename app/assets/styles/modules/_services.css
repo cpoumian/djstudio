@@ -2,15 +2,27 @@
 	height: 100vh;
 
 	@mixin atSmall {
-		height: 60vh;
+		height: 50vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.wrapper {
+		flex-direction: column;
+
+		@mixin atSmall {
+
+		}
 	}
 
 	h2 {
 		font-size: $headingXsmall;
 		text-align: center;
-		margin: $spaceStd 0;
+		margin: $spaceHlf 0;
 
 		@mixin atSmall {
+			margin: $spaceStd 0 $spaceDbl 0;
 			font-size: $heading;
 		}
 	}

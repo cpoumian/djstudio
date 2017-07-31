@@ -1,8 +1,8 @@
 #course {
-	display: block;
 	position: relative;
-	padding: 0;
+	/*padding: 0;*/
 	height: 100vh;
+	/*background-color: gray;*/
 
 		@mixin atSmall {
 			height: 85vh;
@@ -19,22 +19,27 @@
 	.wrapper {
 		height: 100%;
 		margin: 0 auto;
-		align-itmes: center;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
 
 		@mixin atSmall {
-			justify-content: space-around;
+			flex-direction: row;
 		}
-
-	}
+	} /* .wrapper */
 
 	.text-box {
+			flex: 0 1 auto;
 			align-items: left;
+			/*padding: 0;*/
+			margin-bottom: 0;
 
 			h2 {
 				font-size: $headingSmall;
 				font-weight: $weightSemibold;
 				color: $mainBlack;
 				text-align: left;
+				margin-top: 0;
 				margin-bottom: 0;
 			}
 
@@ -43,18 +48,20 @@
 				font-weight: $weightLight;
 				line-height: $lineHeight;
 				text-align: left;
+				margin-bottom: 0;
 			}
 	
 		@mixin atSmall {
 			width: $boxSizeMedium;
-			min-width: $boxSize;
+			min-width: $boxSizeSmall;
+			margin-bottom: 0;
 			padding: 0;
 		
 			h2 {
 				font-size: $headingXsmall;
 				font-weight: $weightSemibold;
 				color: $mainWhite;
-				opacity: 1;
+				opacity: .9;
 				background-color: $mainBlack;
 				margin: 0;
 				width: calc(100% - $spaceHlf);; 
@@ -75,13 +82,18 @@
 	} /* .text-box */
 
 	.btn--large {
-		width: ;
+		width: $btnSize;
+		min-width: $btnSizeSmall;
 		font-size: $textSizeSmall;
 		text-align: center;
 		margin-left: 0;
-		margin-right: 0;
+		margin-right: $spaceHlf;
+		align-self: flex-end;
 
 		@mixin atSmall {
+			align-self: center;
+			width: $btnSize;
+			min-width: $btnSizeSmall;
 			font-size: $textSize;
 			margin-left: $spaceStd;
 			margin-right: $spaceStd;
@@ -95,7 +107,13 @@
 			left: initial;
 			right: 0;
 			width: 33%;
+			min-width: 240px;
+			opacity: .8;
 		} /* @mixin atSmall */
+
+		.brand {
+			margin: 0 $spaceQtr;
+		}
 
 	} /* .brands-container */
 

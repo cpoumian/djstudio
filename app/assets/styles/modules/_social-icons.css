@@ -1,7 +1,7 @@
 .social {
 	display: flex;
 	justify-content: flex-end;
-	align-items: flex-end;
+	align-items: center;
 	flex-wrap: nowrap;
 
 	@mixin atSmall {
@@ -11,10 +11,11 @@
 	&--icon {
 		flex-shrink: 1;
 		width: $iconSizeSmall;
-		padding: $spaceStd;
+		padding: $spaceHlf;
 
 			@mixin atSmall {
-				width: $iconSize;	
+				width: $iconSize;
+				padding: $spaceStd;
 			}
 
 	} /* &--icon */

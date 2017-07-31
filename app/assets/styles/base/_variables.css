@@ -29,11 +29,18 @@ $weightSemibold: 500;
 $weightBold: 600;
 $weightExtrabold: 700;
 
-/* other */
+/* Boxes */
+$boxSizeSmall: 200px;
 $boxSize: 400px;
 $boxSizeMedium: 600px;
 $boxSizeLarge: 800px;
 
+/* Buttons */
+$btnSizeSmall: 100px;
+$btnSize: 150px;
+$btnSizeLarge: 260px;
+
+/* Icons */
 $iconSize: 65px;
 $iconSizeSmall: 50px;
 $iconSizeLarge: 85px;

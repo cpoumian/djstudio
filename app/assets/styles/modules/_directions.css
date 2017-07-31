@@ -1,7 +1,7 @@
-#about {
+#directions {
+	position: relative;
 	height: 100vh;
-	background-color: $mainWhite;
-	/*background-color: gray;*/
+	/*background-color: gray;	*/
 
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M.jpg");
@@ -16,16 +16,24 @@
 
 	.wrapper {
 		height: 100%;
-		margin: 0 auto;
-		flex-direction: column;
-		justify-content: center;
-
-		@mixin atSmall {
-			flex-direction: row;
-		}
-	} /* .wrapper */
+		margin: auto 0;
+	}/* .wrapper */
 
 		.text-box {
+			justify-content: space-around;
+
+			@mixin atSmall {
+				flex-direction: row;
+				align-items: center;
+			}
+
+			#map {
+				width: $boxSize;
+			}
+
+			.address {
+				width: $boxSize;	
+			}
 
 			h2 {
 				color: $lightBlue;
@@ -37,7 +45,6 @@
 
 			p {
 				font-size: $textSizeSmall;
-				font-weight: $weightLight;
 				line-height: $lineHeight;
 				text-align: left;
 				margin: $spaceHlf 0;
@@ -56,7 +63,6 @@
 
 				p {
 					font-size: $textSize;
-					font-weight: $weightRegular;
 					margin-top: 0;
 					margin-bottom: 0;
 					width: 75%;
