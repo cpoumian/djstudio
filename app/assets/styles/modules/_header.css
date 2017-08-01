@@ -1,0 +1,21 @@
+.header {
+	display: flex;
+	flex-direction: column;
+
+	@mixin atSmall {
+		flex-direction: row;
+		justify-content: space-between;
+	} /* atSmall */
+
+	&__logo {
+
+		@mixin atSmall{
+			background-color: $transBlack;
+			padding: $spaceDbl;
+			max-width: 320px;
+			max-height: 148px;
+		} /* atSmall */
+
+	} /* header__logo */
+
+} /* .main-header */

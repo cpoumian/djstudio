@@ -1,0 +1,66 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	background-color: $mainBlack;
+
+	@mixin atSmall {
+		flex-direction: row;
+		justify-content: space-between;
+		height: 40vh;		
+	}
+	
+	&__logo {
+		max-width: 285px;
+
+		@mixin atSmall {
+			max-width: 320px;
+		}
+	} /* &__logo */
+
+	.wrapper--info {
+		order: 2;
+		flex-direction: column;
+		align-items: center;
+
+		@mixin atSmall {
+			align-items: flex-end;
+			order: 3;
+		}
+
+	} /* .wrapper--info */
+
+	p {
+		text-align: center;
+		line-height: $lineHeight;
+		font-size: $textSizeXsmall;
+		color: $mainWhite;
+
+		@mixin atSmall {
+			text-align: right;
+			font-size: $textSizeSmall;
+		}
+	}
+
+	.wrapper--promo {
+		order: 3;
+		align-self: center;
+		text-align: center;
+		max-width: 180px;
+
+		@mixin atSmall {
+			order: 2;
+			align-self: flex-end;
+			max-width: 400px;
+		}
+
+		p {
+			color: $mainWhite;
+			font-size: 1.2rem;
+		}
+
+	}
+
+} /* .footer */

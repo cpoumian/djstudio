@@ -1,4 +1,4 @@
-.large-hero {
+.landing {
 	display: block;
 	position: relative;
 	height: 100vh;
@@ -15,4 +15,4 @@
 
 	/* ¡ .brands-container and .brand used to be here ! */
 
-} /* .large-hero */
+} /* .landing */

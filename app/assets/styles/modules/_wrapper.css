@@ -4,10 +4,8 @@
 		padding-right: $spaceStd;
 		
 	@mixin atSmall {
-		display: flex;
 		align-items: center;
 		justify-content: center;
 		max-width: 1920px;
-		padding-right: $spaceStd;
 	}
 }

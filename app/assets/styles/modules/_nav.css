@@ -1,0 +1,36 @@
+.nav {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	@mixin atSmall {
+		justify-content: space-around;
+		background-color: $transBlack;
+		width: 100%;
+		height: $navHeightLarge;
+	} /* atSmall */
+
+	@mixin atMedium {
+		height: $navHeight;
+	}
+
+	.nav-el {
+		color: $mainWhite;
+		padding: $spaceHlf $spaceStd;
+		font-size: $textSize;
+		font-weight: $weightRegular;
+		text-decoration: none;
+		transition: all $medium;
+
+		&:hover {
+			color: $mainYellow;
+		}
+
+	} /* .nav-el */
+
+	.btn {
+		color: $mainBlack;
+		margin: auto 0;
+	} /* .btn */
+
+} /* .nav */

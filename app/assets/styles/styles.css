@@ -8,8 +8,9 @@
 @import "modules/_wrapper";
 @import "modules/_page-section";
 @import "modules/_text-box";
-@import "modules/_main-header";
-@import "modules/_large-hero";
+@import "modules/_header";
+@import "modules/_landing";
+@import "modules/_nav";
 @import "modules/_brands";
 @import "modules/_about";
 @import "modules/_item";
@@ -18,3 +19,4 @@
 @import "modules/_services";
 @import "modules/_course";
 @import "modules/_directions";
+@import "modules/_footer";
