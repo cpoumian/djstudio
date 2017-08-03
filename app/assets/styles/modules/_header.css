@@ -1,19 +1,27 @@
 .header {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	padding-top: $spaceStd;
 
 	@mixin atSmall {
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: flex-start;
+		padding-top: 0;
 	} /* atSmall */
 
 	&__logo {
+		width: 260px;
+		max-width: 320px;
+		padding: $spaceHlf $spaceQtr;
+		/*max-height: 148px;*/
 
 		@mixin atSmall{
-			background-color: $transBlack;
+			width: 400px;
+			min-width: 320px;
 			padding: $spaceDbl;
-			max-width: 320px;
-			max-height: 148px;
+			background-color: $transBlack;
 		} /* atSmall */
 
 	} /* header__logo */

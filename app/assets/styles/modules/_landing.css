@@ -2,6 +2,7 @@
 	display: block;
 	position: relative;
 	height: 100vh;
+	background-color: $mainBlack;
 
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/large/mixing-deep-main-L.jpg");
@@ -12,7 +13,5 @@
 		background: url("../../assets/images/backgrounds/large/mixing-deep-main-L@2x.jpg");
 		background-size: cover;
 	} /* background image - atSmallDouble */
-
-	/* ¡ .brands-container and .brand used to be here ! */
 
 } /* .landing */

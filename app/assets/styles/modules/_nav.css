@@ -1,9 +1,11 @@
 .nav {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
 
 	@mixin atSmall {
+		flex-direction: row;
 		justify-content: space-around;
 		background-color: $transBlack;
 		width: 100%;
@@ -14,13 +16,30 @@
 		height: $navHeight;
 	}
 
+	.btn {
+		color: $mainBlack;
+		margin: auto 0;
+	} /* .btn */
+
+} /* .nav */
+
 	.nav-el {
 		color: $mainWhite;
 		padding: $spaceHlf $spaceStd;
+		margin-bottom: $spaceHlf;
 		font-size: $textSize;
 		font-weight: $weightRegular;
 		text-decoration: none;
 		transition: all $medium;
+
+		&:nth-child(3n) {
+			margin-bottom: $spaceStd;
+
+			@mixin atSmall {
+				margin-bottom: $spaceHlf;				
+			}
+
+		} /* &:nth-child(3n) */
 
 		&:hover {
 			color: $mainYellow;
@@ -28,9 +47,3 @@
 
 	} /* .nav-el */
 
-	.btn {
-		color: $mainBlack;
-		margin: auto 0;
-	} /* .btn */
-
-} /* .nav */
