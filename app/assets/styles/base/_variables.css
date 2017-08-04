@@ -7,6 +7,7 @@ $mainWhite:  #FFF;
 $lightBlue:  #33A4DE;
 
 /* Layout */
+$lineHeightLarge: 4.2rem;
 $lineHeight: 3.2rem;
 $lineHeightSmall: 1.2rem;
 
@@ -16,6 +17,7 @@ $spaceStd: 2.25rem;
 $spaceDbl: 4.5rem;
 
 /* Font sizes */
+$headingLarge: 5.2rem;
 $heading: 4.5rem;
 $headingSmall: 3.8rem;
 $headingXsmall: 3rem;
