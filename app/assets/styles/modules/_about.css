@@ -1,7 +1,6 @@
 #about {
 	height: 100vh;
 	background-color: $mainWhite;
-	/*background-color: gray;*/
 
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M.jpg");
@@ -52,8 +51,7 @@
 				max-width: 90%;
 			} /* .text-box p */
 
-			@mixin atSmall {
-				
+			@mixin atSmall {	
 
 				h2 {
 					
@@ -79,8 +77,7 @@
 				h2 {
 					align-self: flex-start;
 					font-size: $heading;
-					margin-top: $spaceStd;
-				} /* .text-box h2 */
+					margin-top: $spaceStd;				} /* .text-box h2 */
 
 				p {
 					font-size: $textSize;

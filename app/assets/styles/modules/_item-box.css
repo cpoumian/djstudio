@@ -6,14 +6,20 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+	
 
 	@mixin atSmall {
+		flex-grow: 1;
+		justify-content: space-around;
+	}
+
+	@mixin atMedium {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		justify-content: space-around;
 		align-items: center;
 		width: 80%;
-		max-width: 80%;
-	}
+		max-width: 80%;		
+	}	
 
-}
+} /* item-box */

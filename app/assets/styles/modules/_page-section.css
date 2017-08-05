@@ -1,10 +1,6 @@
 .page-section {
 	padding: $spaceStd 0;
 
-	@mixin atSmall {
-		padding: $spaceStd 0;		
-	}
-
 	&--black {
 		background-color: $mainBlack;
 		color: $mainWhite;
