@@ -1,12 +1,14 @@
 #course {
 	position: relative;
-	/*padding: 0;*/
 	height: 100vh;
-	/*background-color: gray;*/
 
-		@mixin atSmall {
-			height: 85vh;
-		}
+	@mixin atSmall {
+		height: 75vh;
+	}
+
+	@mixin atMedium {
+		height: 85vh;
+	}
 
 	&.dj-mix {
 		@mixin djMixBG;
@@ -14,6 +16,10 @@
 
 	&.production {
 		@mixin productionBG;
+	} /* &.production */
+
+		&.workshops {
+		@mixin workshopsBG;
 	}
 
 	.wrapper {
@@ -24,14 +30,21 @@
 		align-items: center;
 
 		@mixin atSmall {
-			flex-direction: row;
+			height: 75%;
+			justify-content: space-around;
 		}
+
+		@mixin atMedium {
+			height: 100%;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
 	} /* .wrapper */
 
 	.text-box {
 			flex: 0 1 auto;
 			align-items: left;
-			/*padding: 0;*/
 			margin-bottom: 0;
 
 			h2 {
@@ -50,7 +63,7 @@
 				text-align: left;
 				margin-bottom: 0;
 			}
-	
+
 		@mixin atSmall {
 			width: $boxSizeMedium;
 			min-width: $boxSizeSmall;
@@ -77,7 +90,21 @@
 				padding: $spaceStd;
 			}
 
-		} /* @mixin atSmall */
+			li {
+				font-size: $textSize;
+				font-weight: $weightLight;
+				line-height: $lineHeightSmall;
+				list-style: none;
+				text-align: left;
+				margin: $spaceHlf 0;
+				padding: $spaceStd;	
+			}
+
+		} /* .text-box @mixin atSmall */
+
+		@mixin atMedium {
+
+			} /* .text-box @mixin atMedium */
 
 	} /* .text-box */
 
@@ -106,15 +133,26 @@
 		@mixin atSmall {
 			left: initial;
 			right: 0;
-			width: 33%;
-			min-width: 240px;
 			opacity: .8;
 		} /* @mixin atSmall */
 
 		.brand {
+			display: inline-block;
 			margin: 0 $spaceQtr;
 		}
 
 	} /* .brands-container */
+
+	&.production {
+		@mixin atMobile {
+			background-color: $mainBlack;
+			
+			.text-box, h2, p {
+				background-color: $mainBlack;
+				color: $mainWhite;
+			}
+		} /*@mixin atMobile*/
+
+	} /* &.production */
 
 } /* #course */

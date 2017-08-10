@@ -1,11 +1,12 @@
 .wrapper {
-		display: flex;
-		padding-left: $spaceStd;
-		padding-right: $spaceStd;
+	display: flex;
+	padding-left: $spaceStd;
+	padding-right: $spaceStd;
 		
-	@mixin atSmall {
+	@mixin atMedium {
 		align-items: center;
 		justify-content: center;
 		max-width: 1920px;
 	}
-}
+
+} /* .wrapper */

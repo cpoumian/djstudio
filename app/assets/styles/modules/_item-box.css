@@ -9,17 +9,16 @@
 	
 
 	@mixin atSmall {
-		flex-grow: 1;
+		flex-direction: row;
+		flex-wrap: nowrap;
 		justify-content: space-around;
 	}
 
 	@mixin atMedium {
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: space-around;
 		align-items: center;
 		width: 80%;
-		max-width: 80%;		
+		max-width: 80%;
+		flex-grow: 1;
 	}	
 
 } /* item-box */

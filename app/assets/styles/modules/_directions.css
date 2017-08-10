@@ -4,13 +4,13 @@
 	/*background-color: gray;	*/
 
 	@mixin atSmall {
-		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M.jpg");
+		background: url("../../assets/images/backgrounds/medium/vinyl-2-B&W-1280.jpg");
 		background-size: cover;
 		height: 60vh;
 	} /* background image - atSmall */
 
 	@mixin atSmallDouble {
-		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M@2x.jpg");
+		background: url("../../assets/images/backgrounds/medium/vinyl-2-B&W-1280@2x.jpg");
 		background-size: cover;
 	}
 

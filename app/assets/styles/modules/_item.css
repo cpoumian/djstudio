@@ -10,23 +10,23 @@
 		margin: 0 0;
 	}
 
-	.icon {
-		width: $iconSize;
-		min-width: $iconSizeSmall;
-
-		@mixin atSmall {
-			width: $iconSizeLarge;			
-		}
-
-	} /* .icon */
-
-	.service {
-		font-size: $textSizeSmall;
-
-		@mixin atSmall {
-			font-size: $textSize;			
-		}
-
-	} /* .service */
-
 } /* .item */
+
+.icon {
+	width: $iconSize;
+	min-width: $iconSizeSmall;
+
+	@mixin atSmall {
+		width: $iconSizeLarge;			
+	}
+
+} /* .icon */
+
+.service {
+	font-size: $textSizeSmall;
+
+	@mixin atSmall {
+		font-size: $textSize;			
+	}
+
+} /* .service */

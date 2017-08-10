@@ -3,97 +3,90 @@
 	background-color: $mainWhite;
 
 	@mixin atSmall {
-		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M.jpg");
+		background: url("../../assets/images/backgrounds/medium/vinyl-B&W-1280.jpg");
 		background-size: cover;
 		height: 60vh;
-	} /* background image - atSmall */
+	} /* background image - atSmall - standard resolution */
 
-	@mixin atSmallDouble {
-		background: url("../../assets/images/backgrounds/medium/mixing-b&w_fem-M@2x.jpg");
-		background-size: cover;
+.wrapper {
+	height: 100%;
+	margin: 0 auto;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	@mixin atSmall {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.wrapper {
-		height: 100%;
-		margin: 0 auto;
-		flex-direction: column;
-		justify-content: flex-start;
+} /* .wrapper */
 
-		@mixin atSmall {
-			flex-direction: row;
-			justify-content: center;
+.text-box {
+	justify-content: space-around;
+	align-items: center;
+	padding-top: $spaceDbl;
+	padding-bottom: $spaceDbl;
+	height: 80%;
+
+	h2 {
+		color: $lightBlue;
+		margin-top: 0;
+		margin-bottom: $spaceHlf;
+		font-size: $headingLarge;
+		font-weight: $weightSemibold;
+		align-self: center;
+	}
+
+	p {
+		font-size: $textSizeSmall;
+		font-weight: $weightLight;
+		line-height: $lineHeight;
+		text-align: center;
+		justify
+		margin: $spaceHlf 0;
+		max-width: 90%;
+	} /* .text-box p */
+
+	@mixin atSmall {	
+		
+		p {
+			font-size: $textSize;
+			line-height: $lineHeightLarge;
+			width: 50%;
+		}
+					
+	} /* .text-box @mixin atSmall */
+
+	@mixin atMedium {
+		align-items: flex-start;
+		margin: $spaceStd 0;
+		padding: $spaceDbl;
+		width: $boxSizeLarge;
+		min-width: $boxSize;
+		height: 65%;
+
+		h2 {
+			align-self: flex-start;
+			font-size: $heading;
+			margin-top: $spaceStd;				
+
 		}
 
-	} /* .wrapper */
+		p {
+			font-size: $textSize;
+			margin-top: 0;
+			margin-bottom: 0;
+			width: 75%;
+			text-align: left;
+		}
 
-		.text-box {
-			justify-content: space-around;
-			align-items: center;
-			padding-top: $spaceDbl;
-			height: 80%;
+		.social {
+			align-self: flex-end;
+		}
 
-			h2 {
-				color: $lightBlue;
-				margin-top: 0;
-				margin-bottom: $spaceHlf;
-				font-size: $headingLarge;
-				font-weight: $weightSemibold;
-				align-self: center;
-			} /* .text-box h2 */
-
-			p {
-				font-size: $textSizeSmall;
-				font-weight: $weightLight;
-				line-height: $lineHeight;
-				text-align: center;
-				justify
-				margin: $spaceHlf 0;
-				max-width: 90%;
-			} /* .text-box p */
-
-			@mixin atSmall {	
-
-				h2 {
-					
-				} /* .text-box h2 */
-
-				p {
-					font-size: $textSize;
-					line-height: $lineHeightLarge;
-					width: 50%;
-
-				}	/* .text-box p */			
-							
-			} /* @mixin atSmall */
-
-			@mixin atMedium {
-				align-items: flex-start;
-				margin: $spaceStd 0;
-				padding: $spaceDbl;
-				width: $boxSizeLarge;
-				min-width: $boxSize;
-				height: 65%;
-
-				h2 {
-					align-self: flex-start;
-					font-size: $heading;
-					margin-top: $spaceStd;				} /* .text-box h2 */
-
-				p {
-					font-size: $textSize;
-					margin-top: 0;
-					margin-bottom: 0;
-					width: 75%;
-					text-align: left;
-					
-				} /* .text-box p */
-
-				.social {
-					align-self: flex-end;
-				}
-
-			} /* @mixin atMedium */
-			
-		} /* #about .text-box */
+	} /* .text-box @mixin atMedium */
+	
+} /* .text-box */
 
 } /* #about */

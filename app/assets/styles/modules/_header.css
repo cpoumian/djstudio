@@ -9,7 +9,7 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		padding-top: 0;
-	} /* atSmall */
+	} /* .header atSmall */
 
 	&__logo {
 		width: 260px;
@@ -22,8 +22,8 @@
 			min-width: 320px;
 			padding: $spaceDbl;
 			background-color: $transBlack;
-		} /* atSmall */
+		} /* &_logo atSmall */
 
-	} /* header__logo */
+	} /* &__logo */
 
-} /* .main-header */
+} /* .header */

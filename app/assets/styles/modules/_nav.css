@@ -10,40 +10,40 @@
 		background-color: $transBlack;
 		width: 100%;
 		height: $navHeightLarge;
-	} /* atSmall */
+	} /* .nav atSmall */
 
 	@mixin atMedium {
 		height: $navHeight;
-	}
+	} /* .nav atMedium */
 
 	.btn {
 		color: $mainBlack;
 		margin: auto 0;
-	} /* .btn */
+	} /* .btn in .nav */
 
 } /* .nav */
 
-	.nav-el {
-		color: $mainWhite;
-		padding: $spaceHlf $spaceStd;
-		margin-bottom: $spaceHlf;
-		font-size: $textSize;
-		font-weight: $weightRegular;
-		text-decoration: none;
-		transition: all $medium;
+.nav-el {
+	color: $mainWhite;
+	padding: $spaceHlf $spaceStd;
+	margin-bottom: $spaceHlf;
+	font-size: $textSize;
+	font-weight: $weightRegular;
+	text-decoration: none;
+	transition: all $medium;
 
-		&:nth-child(3n) {
-			margin-bottom: $spaceStd;
+	&:nth-child(3n) {
+		margin-bottom: $spaceStd;
 
-			@mixin atSmall {
-				margin-bottom: $spaceHlf;				
-			}
+		@mixin atSmall {
+			margin-bottom: $spaceHlf;				
+		} /* 3rd nav-el atSmall */
 
-		} /* &:nth-child(3n) */
+	} /* 3rd nav-el */
 
-		&:hover {
-			color: $mainYellow;
-		}
+	&:hover {
+		color: $mainYellow;
+	} /* .nav-el at hover */
 
-	} /* .nav-el */
+} /* .nav-el */
 

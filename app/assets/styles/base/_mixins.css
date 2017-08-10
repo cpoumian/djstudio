@@ -1,11 +1,24 @@
 /* Media queries */
 
 	/* Small screens */
-	@define-mixin atSmall {
-		@media (min-width: 550px) {
+	@define-mixin atMobile {
+		@media (max-width: 550px) {
 			@mixin-content;
 		}
 	}
+	
+	@define-mixin atMobileDouble {
+		@media (max-width: 549px) and (min-resolution: 192dpi) {
+			@mixin-content;
+		}
+	}
+	
+	@define-mixin atSmall {
+		@media (min-width: 549px) {
+			@mixin-content;
+		}
+	}
+	
 	@define-mixin atSmallDouble {
 		@media (min-width: 550px) and (min-resolution: 192dpi) {
 			@mixin-content;
@@ -39,6 +52,20 @@
 
 /* Back images */
 
+@define-mixin productionBG {
+
+	@mixin atSmall {
+		background: url("../../assets/images/backgrounds/large/groove-L.jpg");
+		background-size: cover;
+	} /* background image - atSmall */
+
+	@mixin atSmallDouble {
+		background: url("../../assets/images/backgrounds/large/groove-L@2x.jpg");
+		background-size: cover;
+	} /* background image - atSmallDouble */
+
+} /* @define-mixin productionBG */
+
 @define-mixin djMixBG {
 
 	@mixin atSmall {
@@ -50,19 +77,19 @@
 		background: url("../../assets/images/backgrounds/large/mixing-mid-fem-L@2x.jpg");
 		background-size: cover;
 	} /* background image - atSmallDouble */
-
+	
 } /* @define-mixin djMixBG */
 
-@define-mixin productionBG {
+@define-mixin workshopsBG {
 
 	@mixin atSmall {
-		background: url("../../assets/images/backgrounds/large/vinyl-mid-L.jpg");
+		background: url("../../assets/images/backgrounds/large/mixing-deep-male-L.jpg");
 		background-size: cover;
 	} /* background image - atSmall */
 
 	@mixin atSmallDouble {
-		background: url("../../assets/images/backgrounds/large/vinyl-mid-L@2x.jpg");
+		background: url("../../assets/images/backgrounds/large/mixing-deep-male-L@2x.jpg");
 		background-size: cover;
 	} /* background image - atSmallDouble */
 	
-} /* @define-mixin productionBG */
+} /* @define-mixin workshopsBG */

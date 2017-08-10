@@ -35,19 +35,34 @@
 				}
 
 				&--native {
-					width: 50px;
-					height: 30px;	
+					width: 100px;
+					height: 54px;	
+				}
+
+				&--serato {
+					width: 120px;
+					height: 28px;					
 				}
 				
 				&--live {
-					width: 125px;
+					width: 126px;
 					height: 20px;	
 				}
 
 				&--live-large {
 					width: 250px;
 					height: 50px;	
-				}				
+				}
+
+				&--fl-studio {
+					width: 53px;
+					height: 71px;
+				}
+
+				&--tracktion {
+					width: 150px;
+					height: 36px;					
+				}	
 
 
 				flex: 0 1 auto;

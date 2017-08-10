@@ -1,47 +1,44 @@
 #services {
 	height: 100vh;
 
-	.wrapper {
-		flex-direction: column;
-		padding: $spaceStd;
-	} /* .wrapper */
-
-	h2 {
-		font-size: $headingXsmall;
-		text-align: center;
-		margin: $spaceStd 0;
-	}
-
 	@mixin atSmall {
 		display: flex;
 		justify-content: center;
-		height: 65vh;
-	
-		.wrapper {
-			justify-content: space-around;
-			padding: 0 $spaceStd;
-		} /* .wrapper atSmall */
-
-		h2 {
-			margin: $spaceDbl 0;
-			font-size: $headingSmall;
-		}
-
-	} /* atSmall */
-
-	@mixin atMedium {		
 		flex-direction: column;
+		height: 25vh;
+	}
+
+	@mixin atMedium {
 		height: 50vh;
+	}
 
-		.wrapper {
+.wrapper {
+	flex-direction: column;
+	padding: $spaceStd;
 
-			} /* .wrapper atMedium*/
-		
-		h2 {
-			margin: $spaceStd 0 $spaceDbl 0;
-			font-size: $heading;
-		} /*h2 atMedium*/
+	@mixin atSmall {
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 $spaceStd;
+	}
 
-	} /* atMedium */
+} /* .wrapper */
+
+h2 {
+	font-size: $headingXsmall;
+	text-align: center;
+	margin: $spaceStd 0;
+
+	@mixin atSmall {
+		margin: $spaceQtr 0 $spaceDbl 0;
+		font-size: $headingSmall;
+	}
+
+	@mixin atMedium {
+		margin: $spaceStd 0 $spaceDbl 0;
+		font-size: $heading;	
+	}
+
+} /* h2 */
 
 } /* #services */
