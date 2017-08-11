@@ -951,7 +951,6 @@ img {
 		font-weight: 300;
 		line-height: 3.2rem;
 		text-align: center;
-		justify
 		margin: 1.12rem 0;
 		max-width: 90%;
 	}
@@ -1515,12 +1514,10 @@ img {
 /* #course */
 
 #directions {
-	position: relative;
-	height: 100vh; /* #about .text-box */
+	height: 100vh;
+	background-color: #FFF; /* #about .text-box */
 
 }
-
-/*background-color: gray;	*/
 
 @media (min-width: 549px) {
 
@@ -1534,48 +1531,66 @@ img {
 
 /* background image - atSmall */
 
-@media (min-width: 550px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 550px) and (min-resolution: 192dpi) {
-
-#directions {
-		background: url("../../assets/images/backgrounds/medium/vinyl-2-B&W-1280@2x.jpg");
-		background-size: cover
-
-}
-		}
-
 #directions .wrapper {
 		height: 100%;
-		margin: auto 0;
+		margin: 0 auto;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+
 	}
+
+@media (min-width: 549px) {
+
+#directions .wrapper {
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center
+
+	}
+		}
 
 /* .wrapper */
 
 #directions .text-box {
 			-ms-flex-pack: distribute;
-			    justify-content: space-around; /* @mixin atSmall */
+			    justify-content: space-around;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			padding-top: 4.5rem; /* .text-box @mixin atMedium */
 			
 		}
-
-@media (min-width: 549px) {
-
-#directions .text-box {
-				-webkit-box-orient: horizontal;
-				-webkit-box-direction: normal;
-				    -ms-flex-direction: row;
-				        flex-direction: row;
-				-webkit-box-align: center;
-				    -ms-flex-align: center;
-				        align-items: center
-			
-		}
-		}
-
-#directions .text-box #map {
-				width: 400px;
-			}
 
 #directions .text-box .address {
 				width: 400px;	
+				display: -webkit-box;	
+				display: -ms-flexbox;	
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+				padding-bottom: 4.5rem;
+			}
+
+#directions .text-box #map {
+				width: 400px;
+				padding-bottom: 4.5rem;
 			}
 
 #directions .text-box h2 {
@@ -1584,25 +1599,34 @@ img {
 				margin-bottom: 1.12rem;
 				font-size: 4.5rem;
 				font-weight: 500;
+				-ms-flex-item-align: center;
+				    align-self: center;
 			}
 
 #directions .text-box p {
 				font-size: 1.8rem;
+				font-weight: 300;
 				line-height: 3.2rem;
-				text-align: left;
+				text-align: center;
 				margin: 1.12rem 0;
 				max-width: 90%;
 			}
 
 @media (min-width: 549px) {
 
-#directions .text-box {				
-				margin: 2.25rem 0;
-				padding: 2.25rem;
-				width: 800px;
+#directions .text-box {
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+				height: 70%;
+				width: 600px;
 				min-width: 400px
 			
 		}
+
+				#directions .text-box .address {
+					padding-bottom: 2.25rem;	
+				}
 
 				#directions .text-box h2 {
 					font-size: 4.5rem;
@@ -1612,14 +1636,26 @@ img {
 					font-size: 2rem;
 					margin-top: 0;
 					margin-bottom: 0;
-					width: 75%;
-					
+					width: 100%;					
 				}
+		}
 
-				#directions .text-box .social {
-					-ms-flex-item-align: end;
-					    align-self: flex-end;
-				}
+/* .text-box @mixin atSmall */
+
+@media (min-width: 800px) {
+
+#directions .text-box {
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: row;
+				        flex-direction: row;
+				width: 800px;
+				min-width: 400px;
+				margin: 2.25rem 0;
+				padding: 2.25rem;
+				height: 60%
+			
+		}
 		}
 
 /* #about */

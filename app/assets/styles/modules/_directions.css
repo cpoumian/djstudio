@@ -1,7 +1,6 @@
 #directions {
-	position: relative;
 	height: 100vh;
-	/*background-color: gray;	*/
+	background-color: $mainWhite;
 
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/medium/vinyl-2-B&W-1280.jpg");
@@ -9,30 +8,36 @@
 		height: 60vh;
 	} /* background image - atSmall */
 
-	@mixin atSmallDouble {
-		background: url("../../assets/images/backgrounds/medium/vinyl-2-B&W-1280@2x.jpg");
-		background-size: cover;
-	}
-
 	.wrapper {
 		height: 100%;
-		margin: auto 0;
+		margin: 0 auto;
+		flex-direction: column;
+		justify-content: flex-start;
+		
+		@mixin atSmall {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+
 	}/* .wrapper */
 
 		.text-box {
 			justify-content: space-around;
+			align-items: center;
+			padding-top: $spaceDbl;
 
-			@mixin atSmall {
-				flex-direction: row;
-				align-items: center;
+			.address {
+				width: $boxSize;	
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding-bottom: $spaceDbl;
 			}
 
 			#map {
 				width: $boxSize;
-			}
-
-			.address {
-				width: $boxSize;	
+				padding-bottom: $spaceDbl;
 			}
 
 			h2 {
@@ -41,21 +46,27 @@
 				margin-bottom: $spaceHlf;
 				font-size: $heading;
 				font-weight: $weightSemibold;
+				align-self: center;
 			}
 
 			p {
 				font-size: $textSizeSmall;
+				font-weight: $weightLight;
 				line-height: $lineHeight;
-				text-align: left;
+				text-align: center;
 				margin: $spaceHlf 0;
 				max-width: 90%;
 			}
 
-			@mixin atSmall {				
-				margin: $spaceStd 0;
-				padding: $spaceStd;
-				width: $boxSizeLarge;
+			@mixin atSmall {
+				align-items: center;
+				height: 70%;
+				width: $boxSizeMedium;
 				min-width: $boxSize;
+
+				.address {
+					padding-bottom: $spaceStd;	
+				}
 
 				h2 {
 					font-size: $heading;
@@ -65,15 +76,20 @@
 					font-size: $textSize;
 					margin-top: 0;
 					margin-bottom: 0;
-					width: 75%;
-					
-				}
+					width: 100%;					
+				}					
 
-				.social {
-					align-self: flex-end;
-				}				
+			} /* .text-box @mixin atSmall */
 
-			} /* @mixin atSmall */
+			@mixin atMedium {
+				flex-direction: row;
+				width: $boxSizeLarge;
+				min-width: $boxSize;
+				margin: $spaceStd 0;
+				padding: $spaceStd;
+				height: 60%;
+
+			} /* .text-box @mixin atMedium */
 			
 		} /* #about .text-box */
 

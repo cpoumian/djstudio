@@ -43,7 +43,6 @@
 		font-weight: $weightLight;
 		line-height: $lineHeight;
 		text-align: center;
-		justify
 		margin: $spaceHlf 0;
 		max-width: 90%;
 	} /* .text-box p */
