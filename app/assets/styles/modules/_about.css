@@ -20,6 +20,10 @@
 		align-items: center;
 	}
 
+	@mixin atMedium {
+
+	}
+
 } /* .wrapper */
 
 .text-box {
@@ -39,7 +43,7 @@
 	}
 
 	p {
-		font-size: $textSizeSmall;
+		font-size: $textSize;
 		font-weight: $weightLight;
 		line-height: $lineHeight;
 		text-align: center;
@@ -47,12 +51,16 @@
 		max-width: 90%;
 	} /* .text-box p */
 
-	@mixin atSmall {	
-		
+	@mixin atSmall {
+		justify-content: center;
+
 		p {
-			font-size: $textSize;
 			line-height: $lineHeightLarge;
 			width: 50%;
+		}
+
+		.social {
+			margin: $spaceStd 0;
 		}
 					
 	} /* .text-box @mixin atSmall */
@@ -68,7 +76,7 @@
 		h2 {
 			align-self: flex-start;
 			font-size: $heading;
-			margin-top: $spaceStd;				
+			/*margin-top: $spaceStd;*/				
 
 		}
 
@@ -82,6 +90,7 @@
 
 		.social {
 			align-self: flex-end;
+			margin: $spaceStd 0;
 		}
 
 	} /* .text-box @mixin atMedium */

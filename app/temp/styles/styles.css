@@ -922,6 +922,9 @@ img {
 }
 		}
 
+@media (min-width: 800px) {
+		}
+
 /* .wrapper */
 
 #about .text-box {
@@ -947,7 +950,7 @@ img {
 	}
 
 #about .text-box p {
-		font-size: 1.8rem;
+		font-size: 2rem;
 		font-weight: 300;
 		line-height: 3.2rem;
 		text-align: center;
@@ -957,12 +960,22 @@ img {
 
 /* .text-box p */
 
-@media (min-width: 549px) {	
-		
+@media (min-width: 549px) {
+
+#about .text-box {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center
+	
+}
+
 		#about .text-box p {
-			font-size: 2rem;
 			line-height: 4.2rem;
 			width: 50%;
+		}
+
+		#about .text-box .social {
+			margin: 2.25rem 0;
 		}
 		}
 
@@ -986,7 +999,7 @@ img {
 			-ms-flex-item-align: start;
 			    align-self: flex-start;
 			font-size: 4.5rem;
-			margin-top: 2.25rem;				
+			/*margin-top: $spaceStd;*/				
 
 		}
 
@@ -1001,6 +1014,7 @@ img {
 		#about .text-box .social {
 			-ms-flex-item-align: end;
 			    align-self: flex-end;
+			margin: 2.25rem 0;
 		}
 		}
 
@@ -1122,7 +1136,8 @@ img {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	width: 100%;	
+	width: 100%;
+	margin-bottom: 4.5rem;	
 
 }
 
@@ -1136,7 +1151,8 @@ img {
 		-ms-flex-wrap: nowrap;
 		    flex-wrap: nowrap;
 		-ms-flex-pack: distribute;
-		    justify-content: space-around	
+		    justify-content: space-around;
+		margin-bottom: 0	
 
 }
 		}
@@ -1144,6 +1160,9 @@ img {
 @media (min-width: 800px) {
 
 .item-box {
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
@@ -1194,7 +1213,8 @@ img {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	padding: 2.25rem;
+	padding-top: 0;
+	padding-bottom: 2.25rem;
 
 }
 
@@ -1223,6 +1243,8 @@ img {
 @media (min-width: 549px) {
 
 #services h2 {
+		text-align: left;
+		/*transform: translateX(-2.25rem);*/
 		margin: .6rem 0 4.5rem 0;
 		font-size: 3.8rem
 
@@ -1232,6 +1254,7 @@ img {
 @media (min-width: 800px) {
 
 #services h2 {
+		/*transform: translateX(-4.5rem);*/
 		margin: 2.25rem 0 4.5rem 0;
 		font-size: 4.5rem
 
@@ -1378,7 +1401,8 @@ img {
 			-webkit-box-align: left;
 			    -ms-flex-align: left;
 			        align-items: left;
-			margin-bottom: 0; /* .text-box @mixin atMedium */
+			margin-bottom: 0;
+			padding-left: 1.12rem; /* .text-box @mixin atMedium */
 
 	}
 
@@ -1416,8 +1440,9 @@ img {
 				opacity: .9;
 				background-color: #000;
 				margin: 0;
-				width: calc(100% - 1.12rem);; 
-				padding: 2.25rem 0 2.25rem 1.12rem;
+				width: 100%;
+				max-width: calc(100% - 2.25rem); 
+				padding: 2.25rem 0 2.25rem 2.25rem;
 			}
 
 			#course .text-box p {
@@ -1566,9 +1591,9 @@ img {
 #directions .text-box {
 			-ms-flex-pack: distribute;
 			    justify-content: space-around;
-			-webkit-box-align: center;
-			    -ms-flex-align: center;
-			        align-items: center;
+			-webkit-box-align: left;
+			    -ms-flex-align: left;
+			        align-items: left;
 			padding-top: 4.5rem; /* .text-box @mixin atMedium */
 			
 		}
@@ -1599,15 +1624,14 @@ img {
 				margin-bottom: 1.12rem;
 				font-size: 4.5rem;
 				font-weight: 500;
-				-ms-flex-item-align: center;
-				    align-self: center;
+				/*text-align: center;*/
 			}
 
 #directions .text-box p {
-				font-size: 1.8rem;
+				font-size: 2rem;
 				font-weight: 300;
 				line-height: 3.2rem;
-				text-align: center;
+				/*text-align: center;*/
 				margin: 1.12rem 0;
 				max-width: 90%;
 			}
@@ -1628,12 +1652,15 @@ img {
 					padding-bottom: 2.25rem;	
 				}
 
+				#directions .text-box #map {
+					padding-bottom: 4.5rem;
+				}
+
 				#directions .text-box h2 {
 					font-size: 4.5rem;
 				}
 
 				#directions .text-box p {
-					font-size: 2rem;
 					margin-top: 0;
 					margin-bottom: 0;
 					width: 100%;					
@@ -1656,6 +1683,10 @@ img {
 				height: 60%
 			
 		}
+
+				#directions .text-box #map {
+					padding-bottom: 0;
+				}
 		}
 
 /* #about */

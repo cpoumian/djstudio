@@ -14,7 +14,8 @@
 
 .wrapper {
 	flex-direction: column;
-	padding: $spaceStd;
+	padding-top: 0;
+	padding-bottom: $spaceStd;
 
 	@mixin atSmall {
 		justify-content: space-around;
@@ -30,11 +31,14 @@ h2 {
 	margin: $spaceStd 0;
 
 	@mixin atSmall {
+		text-align: left;
+		/*transform: translateX(-2.25rem);*/
 		margin: $spaceQtr 0 $spaceDbl 0;
 		font-size: $headingSmall;
 	}
 
 	@mixin atMedium {
+		/*transform: translateX(-4.5rem);*/
 		margin: $spaceStd 0 $spaceDbl 0;
 		font-size: $heading;	
 	}

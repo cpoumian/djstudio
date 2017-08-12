@@ -46,6 +46,7 @@
 			flex: 0 1 auto;
 			align-items: left;
 			margin-bottom: 0;
+			padding-left: $spaceHlf;
 
 			h2 {
 				font-size: $headingSmall;
@@ -77,8 +78,9 @@
 				opacity: .9;
 				background-color: $mainBlack;
 				margin: 0;
-				width: calc(100% - $spaceHlf);; 
-				padding: $spaceStd 0 $spaceStd $spaceHlf;
+				width: 100%;
+				max-width: calc(100% - $spaceStd); 
+				padding: $spaceStd 0 $spaceStd $spaceStd;
 			}
 
 			p {

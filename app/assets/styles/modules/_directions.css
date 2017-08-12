@@ -24,7 +24,7 @@
 
 		.text-box {
 			justify-content: space-around;
-			align-items: center;
+			align-items: left;
 			padding-top: $spaceDbl;
 
 			.address {
@@ -46,14 +46,14 @@
 				margin-bottom: $spaceHlf;
 				font-size: $heading;
 				font-weight: $weightSemibold;
-				align-self: center;
+				/*text-align: center;*/
 			}
 
 			p {
-				font-size: $textSizeSmall;
+				font-size: $textSize;
 				font-weight: $weightLight;
 				line-height: $lineHeight;
-				text-align: center;
+				/*text-align: center;*/
 				margin: $spaceHlf 0;
 				max-width: 90%;
 			}
@@ -68,12 +68,15 @@
 					padding-bottom: $spaceStd;	
 				}
 
+				#map {
+					padding-bottom: $spaceDbl;
+				}
+
 				h2 {
 					font-size: $heading;
 				}
 
 				p {
-					font-size: $textSize;
 					margin-top: 0;
 					margin-bottom: 0;
 					width: 100%;					
@@ -88,6 +91,10 @@
 				margin: $spaceStd 0;
 				padding: $spaceStd;
 				height: 60%;
+
+				#map {
+					padding-bottom: 0;
+				}
 
 			} /* .text-box @mixin atMedium */
 			
