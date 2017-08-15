@@ -8,6 +8,11 @@
 		height: 60vh;
 	} /* background image - atSmall - standard resolution */
 
+	@mixin atMedium {
+		height: 75vh;
+	}
+
+
 .wrapper {
 	height: 100%;
 	margin: 0 auto;
