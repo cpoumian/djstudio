@@ -7,7 +7,7 @@
 	}
 
 	@mixin atMedium {
-		height: 85vh;
+		height: 92.5vh;
 	}
 
 	&.dj-mix {
@@ -105,8 +105,17 @@
 		} /* .text-box @mixin atSmall */
 
 		@mixin atMedium {
+			h2{
+				
+			}
 
-			} /* .text-box @mixin atMedium */
+			p {
+				margin-top: $spaceStd;
+				margin-bottom: $spaceStd;
+				line-height: $lineHeightLarge;
+			}
+
+		} /* .text-box @mixin atMedium */
 
 	} /* .text-box */
 

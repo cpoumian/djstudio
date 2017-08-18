@@ -53,4 +53,10 @@ $iconSizeSmall: 50px;
 $iconSizeLarge: 85px;
 
 /* transition speeds */
-$medium: .4s;
+$moderate: .4s;
+
+/* Interaction */
+$time-base: 0.5s;
+$time-double: calc($time-base * 2);
+$time-half: calc($time-base / 2);
+$time-quarter: calc($time-base / 4);

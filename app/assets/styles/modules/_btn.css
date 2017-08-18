@@ -4,7 +4,7 @@
 	text-decoration: none;
 	padding: $spaceQtr $spaceHlf;
 	display: inline-block;
-	transition: all $medium;
+	transition: all $moderate;
 
 	&:hover {
 		background-color: $darkYellow;

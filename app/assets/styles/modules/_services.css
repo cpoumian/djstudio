@@ -26,6 +26,8 @@
 } /* .wrapper */
 
 h2 {
+	/*color: $mainYellow;
+	opacity: 0.85;*/
 	font-size: $headingXsmall;
 	text-align: center;
 	margin: $spaceStd 0;
@@ -44,5 +46,36 @@ h2 {
 	}
 
 } /* h2 */
+
+a {
+	color: $mainWhite;
+	text-decoration: none;
+	transition: all $moderate;
+
+	&:hover {
+			color: $mainYellow;
+		} /* .nav-el at hover */
+
+		@mixin atMedium {
+
+				&:after {
+					content: "";
+			    display: block;
+			    height: 5px;
+			    width: 0;
+			    margin: .5rem .5rem;
+			    transition: width $time-half ease-out, 
+			    background-color $time-half ease-out;
+				} /* &:after */
+
+				&:hover:after {
+			    width: 100%;
+			    background: $mainYellow;
+			    opacity: 0.75;
+			  } /* &:hover:after */
+
+	  } /*@mixin atMedium*/
+	
+	} /* a */
 
 } /* #services */

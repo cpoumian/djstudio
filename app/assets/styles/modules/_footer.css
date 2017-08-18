@@ -112,6 +112,27 @@
 		text-decoration: none;
 		font-size: $textSizeSmall;
 		color: $mainYellow;
-	}
+		
+		@mixin atMedium {
+
+				&:after {
+					content: "";
+			    display: block;
+			    height: 5px;
+			    width: 0;
+			    margin: .5rem .5rem;
+			    transition: width $time-half ease-out, 
+			    background-color $time-half ease-out;
+				} /* &:after */
+
+				&:hover:after {
+			    width: 100%;
+			    background: $mainYellow;
+			    opacity: 0.75;
+			  } /* &:hover:after */
+
+	  } /* @mixin atMedium */
+
+	} /* a */
 
 } /* .footer */

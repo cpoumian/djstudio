@@ -19,6 +19,9 @@
 	.btn {
 		color: $mainBlack;
 		margin: auto 0;
+		@mixin atSmall {
+			margin-right: $spaceStd;
+		}
 	} /* .btn in .nav */
 
 } /* .nav */
@@ -27,23 +30,49 @@
 	color: $mainWhite;
 	padding: $spaceHlf $spaceStd;
 	margin-bottom: $spaceHlf;
+	margin-top: $spaceHlf;
 	font-size: $textSize;
 	font-weight: $weightRegular;
 	text-decoration: none;
-	transition: all $medium;
+	transition: all $moderate;
+	margin-bottom: $spaceStd;
 
-	&:nth-child(3n) {
-		margin-bottom: $spaceStd;
+		&:hover {
+			color: $mainYellow;
+		} /* .nav-el at hover */
 
 		@mixin atSmall {
-			margin-bottom: $spaceHlf;				
+			margin-bottom: $spaceHlf;
+			margin-top: 0;
 		} /* 3rd nav-el atSmall */
 
-	} /* 3rd nav-el */
+		@mixin atMedium {
 
-	&:hover {
-		color: $mainYellow;
-	} /* .nav-el at hover */
+			&:nth-child(-n+3) {
+				transform: translateY(1rem);
 
-} /* .nav-el */
+				&:after {
+					content: "";
+			    display: block;
+			    height: 5px;
+			    width: 0;
+			    margin: .5rem .5rem;
+			    transition: width $time-half ease-out, 
+			    background-color $time-half ease-out;
+				} /* &:after */
+
+				&:hover:after {
+			    width: 100%;
+			    background: $mainYellow;
+			    opacity: 0.75;
+			  } /* &:hover:after */
+
+		  } /*&:nth-child(-n+3)*/
+
+	  } /*@mixin atMedium*/
+
+	} /* .nav-el */
+
+
+
 
