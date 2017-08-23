@@ -1060,6 +1060,7 @@ img {
 		}
 
 		#about .text-box .social {
+			display: none;
 			-ms-flex-item-align: end;
 			    align-self: flex-end;
 			margin: 2.25rem 0;

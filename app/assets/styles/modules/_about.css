@@ -94,6 +94,7 @@
 		}
 
 		.social {
+			display: none;
 			align-self: flex-end;
 			margin: $spaceStd 0;
 		}
