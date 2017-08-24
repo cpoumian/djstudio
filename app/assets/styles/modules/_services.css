@@ -26,21 +26,17 @@
 } /* .wrapper */
 
 h2 {
-	/*color: $mainYellow;
-	opacity: 0.85;*/
 	font-size: $headingXsmall;
 	text-align: center;
 	margin: $spaceStd 0;
 
 	@mixin atSmall {
 		text-align: left;
-		/*transform: translateX(-2.25rem);*/
 		margin: $spaceQtr 0 $spaceDbl 0;
 		font-size: $headingSmall;
 	}
 
 	@mixin atMedium {
-		/*transform: translateX(-4.5rem);*/
 		margin: $spaceStd 0 $spaceDbl 0;
 		font-size: $heading;	
 	}

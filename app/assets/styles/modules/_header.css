@@ -11,6 +11,10 @@
 		padding-top: 0;
 	} /* .header atSmall */
 
+	@mixin atMedium {
+		
+	}
+
 	&__logo {
 		width: 260px;
 		max-width: 320px;
