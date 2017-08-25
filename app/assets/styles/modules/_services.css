@@ -1,4 +1,4 @@
-#services {
+#courses, #services {
 	height: 100vh;
 
 	@mixin atSmall {

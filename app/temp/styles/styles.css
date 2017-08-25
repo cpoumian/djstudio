@@ -611,13 +611,15 @@ img {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	padding-top: 2.25rem; /* &__logo */
+	padding-top: 2.25rem;
+	width: 100%; /* &__logo */
 
 }
 
 @media (min-width: 549px) {
 
 .header {
+		/*position: fixed;*/
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: row;
@@ -654,6 +656,13 @@ img {
 			min-width: 320px;
 			padding: 4.5rem;
 			background-color: rgba(0,0,0, 0.65)
+
+/*			&--dark {
+				max-width: 95px;
+				max-height: 44px;
+				background-color: $mainBlack;
+				z-index: 1;
+			}*/
 
 	}
 		}
@@ -718,6 +727,11 @@ img {
 		background-color: rgba(0,0,0, 0.65);
 		width: 100%;
 		height: 200px
+
+/*		&--dark {
+			background-color: $mainBlack;
+			z-index: 1;
+		}*/
 
 }
 		}
@@ -865,14 +879,11 @@ img {
 
 .brand {
 		display: inline-block;
-		margin: auto 1.12rem;	
+		margin: auto 1.12rem;
 
+				-webkit-box-flex: 0;
 
-				-webkit-box-flex: 0;	
-
-
-				    -ms-flex: 0 1 auto;	
-
+				    -ms-flex: 0 1 auto;
 
 				        flex: 0 1 auto
 
@@ -880,28 +891,18 @@ img {
 
 				
 				.brand--pioneer {
-					width: 132px;
-					height: 20px;
+					width: 158px;
+					height: 24px;
 				}
 
 				.brand--native {
-					width: 100px;
-					height: 54px;	
-				}
-
-				.brand--serato {
-					width: 120px;
-					height: 28px;					
+					width: 286px;
+					height: 100px;
 				}
 				
-				.brand--live {
-					width: 126px;
-					height: 20px;	
-				}
-
-				.brand--live-large {
-					width: 250px;
-					height: 50px;	
+				.brand--ableton {
+					width: 157.5px;
+					height: 25px;	
 				}
 
 				.brand--fl-studio {
@@ -911,7 +912,17 @@ img {
 
 				.brand--tracktion {
 					width: 150px;
-					height: 36px;					
+					height: 36px;
+				}
+
+				.brand--xfer {
+					width: 92px;
+					height: 64px;
+				}
+
+				.brand--serato {
+					width: 120px;
+					height: 28px;					
 				}
 		}
 
@@ -1063,7 +1074,7 @@ img {
 		}
 
 		#about .text-box .social {
-			display: none;
+			/*display: none;*/
 			-ms-flex-item-align: end;
 			    align-self: flex-end;
 			margin: 2.25rem 0;
@@ -1229,14 +1240,14 @@ img {
 
 /* item-box */
 
-#services {
+#courses, #services {
 	height: 100vh; /* a */
 
 }
 
 @media (min-width: 549px) {
 
-#services {
+#courses, #services {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -1254,13 +1265,13 @@ img {
 
 @media (min-width: 800px) {
 
-#services {
+#courses, #services {
 		height: 50vh
 
 }
 		}
 
-#services .wrapper {
+#courses .wrapper, #services .wrapper {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
@@ -1272,7 +1283,7 @@ img {
 
 @media (min-width: 549px) {
 
-#services .wrapper {
+#courses .wrapper, #services .wrapper {
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
 		-webkit-box-align: center;
@@ -1285,7 +1296,7 @@ img {
 
 /* .wrapper */
 
-#services h2 {
+#courses h2, #services h2 {
 	font-size: 3rem;
 	text-align: center;
 	margin: 2.25rem 0;
@@ -1294,7 +1305,7 @@ img {
 
 @media (min-width: 549px) {
 
-#services h2 {
+#courses h2, #services h2 {
 		text-align: left;
 		margin: .6rem 0 4.5rem 0;
 		font-size: 3.8rem
@@ -1304,7 +1315,7 @@ img {
 
 @media (min-width: 800px) {
 
-#services h2 {
+#courses h2, #services h2 {
 		margin: 2.25rem 0 4.5rem 0;
 		font-size: 4.5rem
 
@@ -1313,7 +1324,7 @@ img {
 
 /* h2 */
 
-#services a {
+#courses a, #services a {
 	color: #FFF;
 	text-decoration: none;
 	-webkit-transition: all .4s;
@@ -1321,7 +1332,7 @@ img {
 	
 	}
 
-#services a:hover {
+#courses a:hover, #services a:hover {
 			color: #FFFF87;
 		}
 
@@ -1329,11 +1340,11 @@ img {
 
 @media (min-width: 800px) {
 
-#services a { /* &:after */ /* &:hover:after */
+#courses a, #services a { /* &:after */ /* &:hover:after */
 	
 	}
 
-				#services a:after {
+				#courses a:after, #services a:after {
 					content: "";
 			    display: block;
 			    height: 5px;
@@ -1345,7 +1356,7 @@ img {
 			    background-color calc(0.5s / 2) ease-out;
 				}
 
-				#services a:hover:after {
+				#courses a:hover:after, #services a:hover:after {
 			    width: 100%;
 			    background: #FFFF87;
 			    opacity: 0.75;
@@ -1371,7 +1382,7 @@ img {
 @media (min-width: 800px) {
 
 #course {
-		height: 92.5vh
+		height: 95vh
 
 }
 		}
@@ -2027,4 +2038,32 @@ img {
 	}
 
 /* .reveal-item */
+
+.scrollToTop { 
+	display:none;
+		
+}
+
+@media (min-width: 549px) {
+
+.scrollToTop {
+		width:100px; 
+		height:130px;
+		padding:10px; 
+		text-align:center; 
+		background: whiteSmoke;
+		font-weight: bold;
+		color: #444;
+		text-decoration: none;
+		position:fixed;
+		top:75px;
+		right:40px;
+		background: url('arrow_up.png') no-repeat 0px 20px
+		
+}
+		}
+
+.scrollToTop:hover{
+	text-decoration:none;
+}
 

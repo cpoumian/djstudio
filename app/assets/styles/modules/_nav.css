@@ -10,6 +10,12 @@
 		background-color: $transBlack;
 		width: 100%;
 		height: $navHeightLarge;
+
+/*		&--dark {
+			background-color: $mainBlack;
+			z-index: 1;
+		}*/
+
 	} /* .nav atSmall */
 
 	@mixin atMedium {
