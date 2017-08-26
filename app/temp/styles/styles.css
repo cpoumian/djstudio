@@ -600,6 +600,30 @@ img {
 
 /* .text-box */
 
+.scrollToTop { 
+	display:none;
+
+}
+
+@media (min-width: 549px) {
+
+.scrollToTop {
+		display: inline-block;
+		width:32px;
+		height:32px;
+		position:fixed;
+		bottom:20px;
+		right:20px;
+		background: url('../../assets/images/icons/items/al-inicio.png');
+		opacity: 0.5
+
+}
+		}
+
+.scrollToTop .scrollToTop:hover{
+		text-decoration:none;
+	}
+
 .header {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1835,7 +1859,7 @@ img {
 @media (min-width: 800px) {
 
 .footer {
-		height: 50vh;
+		height: 55vh;
 		display: block
 
 }
@@ -2038,32 +2062,4 @@ img {
 	}
 
 /* .reveal-item */
-
-.scrollToTop { 
-	display:none;
-		
-}
-
-@media (min-width: 549px) {
-
-.scrollToTop {
-		width:100px; 
-		height:130px;
-		padding:10px; 
-		text-align:center; 
-		background: whiteSmoke;
-		font-weight: bold;
-		color: #444;
-		text-decoration: none;
-		position:fixed;
-		top:75px;
-		right:40px;
-		background: url('arrow_up.png') no-repeat 0px 20px
-		
-}
-		}
-
-.scrollToTop:hover{
-	text-decoration:none;
-}
 

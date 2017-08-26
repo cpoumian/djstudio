@@ -8,6 +8,7 @@
 @import "modules/_wrapper";
 @import "modules/_page-section";
 @import "modules/_text-box";
+@import "modules/_scroll-to-top";
 @import "modules/_header";
 @import "modules/_landing";
 @import "modules/_nav";
@@ -21,5 +22,4 @@
 @import "modules/_directions";
 @import "modules/_footer";
 @import "modules/_reveal-item";
-@import "modules/_scroll-to-top";
 

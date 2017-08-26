@@ -13,7 +13,7 @@
 	}
 
 	@mixin atMedium {
-		height: 50vh;
+		height: 55vh;
 		display: block;
 	}
 
