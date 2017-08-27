@@ -1391,10 +1391,11 @@ img {
 /* #services */
 
 #course {
-	position: relative;
-	height: 100vh; /* &.production */
+	position: relative; /* &.production */
 
 }
+
+/*height: 100vh;*/
 
 @media (min-width: 549px) {
 
@@ -1492,6 +1493,7 @@ img {
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
+        padding: 5rem;
 
 	}
 
@@ -1525,11 +1527,8 @@ img {
 			-webkit-box-flex: 0;
 			    -ms-flex: 0 1 auto;
 			        flex: 0 1 auto;
-			-webkit-box-align: left;
-			    -ms-flex-align: left;
-			        align-items: left;
-			margin-bottom: 0;
-			padding-left: 1.12rem; /* .text-box @mixin atMedium */
+			margin-bottom: 5rem;
+            text-align: center; /* .text-box @mixin atMedium */
 
 	}
 
@@ -1537,7 +1536,6 @@ img {
 				font-size: 3.8rem;
 				font-weight: 500;
 				color: #000;
-				text-align: left;
 				margin-top: 0;
 				margin-bottom: 0;
 			}
@@ -1546,7 +1544,6 @@ img {
 				font-size: 1.8rem;
 				font-weight: 300;
 				line-height: 3.2rem;
-				text-align: left;
 				margin-bottom: 0;
 			}
 
@@ -1614,9 +1611,6 @@ img {
 		font-size: 1.8rem;
 		text-align: center;
 		margin-left: 0;
-		margin-right: 1.12rem;
-		-ms-flex-item-align: end;
-		    align-self: flex-end;
 
 	}
 
