@@ -54,8 +54,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding-left: $spaceStd;
-		padding-right: $spaceStd;
+		/*padding-left: $spaceStd;
+		padding-right: $spaceStd;*/
 
 		@mixin atSmall {
 			flex-direction: row;

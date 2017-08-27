@@ -114,7 +114,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -1936,10 +1937,11 @@ img {
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
-		padding-left: 2.25rem;
-		padding-right: 2.25rem;
 
 	}
+
+/*padding-left: $spaceStd;
+		padding-right: $spaceStd;*/
 
 @media (min-width: 549px) {
 
