@@ -1266,7 +1266,7 @@ img {
 /* item-box */
 
 #courses, #services {
-	height: 100vh; /* a */
+	height: auto; /* a */
 
 }
 
@@ -1283,7 +1283,7 @@ img {
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
-		height: 25vh
+		height: 50vh
 
 }
 		}

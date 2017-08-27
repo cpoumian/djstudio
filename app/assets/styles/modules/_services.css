@@ -1,11 +1,11 @@
 #courses, #services {
-	height: 100vh;
+	height: auto;
 
 	@mixin atSmall {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		height: 25vh;
+		height: 50vh;
 	}
 
 	@mixin atMedium {
