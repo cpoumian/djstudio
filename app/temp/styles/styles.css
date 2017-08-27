@@ -1675,7 +1675,7 @@ img {
 /* #course */
 
 #directions {
-	height: 100vh;
+	height: auto;
 	background-color: #FFF; /* #about .text-box */
 
 }
@@ -1684,8 +1684,7 @@ img {
 
 #directions {
 		background: url("../../assets/images/backgrounds/medium/vinyl-2-B&W-1280.jpg");
-		background-size: cover;
-		height: 60vh
+		background-size: cover
 
 }
 		}
@@ -1735,9 +1734,10 @@ img {
 		}
 
 #directions .text-box .address {
-				width: 400px;	
-				display: -webkit-box;	
-				display: -ms-flexbox;	
+				/*width: $boxSize;*/
+                width: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
 				display: flex;
 				-webkit-box-orient: vertical;
 				-webkit-box-direction: normal;
@@ -1747,10 +1747,12 @@ img {
 				    -ms-flex-pack: center;
 				        justify-content: center;
 				padding-bottom: 4.5rem;
+                text-align: center;
 			}
 
 #directions .text-box #map {
-				width: 400px;
+				/*width: $boxSize;*/
+              width: auto;
 				padding-bottom: 4.5rem;
 			}
 
@@ -1769,7 +1771,6 @@ img {
 				line-height: 3.2rem;
 				/*text-align: center;*/
 				margin: 1.12rem 0;
-				max-width: 90%;
 			}
 
 @media (min-width: 549px) {
@@ -1785,7 +1786,8 @@ img {
 		}
 
 				#directions .text-box .address {
-					padding-bottom: 2.25rem;	
+					padding-bottom: 2.25rem;
+                    text-align: center;
 				}
 
 				#directions .text-box #map {
@@ -1823,6 +1825,10 @@ img {
 				#directions .text-box #map {
 					padding-bottom: 0;
 				}
+
+              #directions .text-box .address {
+                text-align: left;
+              }
 		}
 
 /* #about */

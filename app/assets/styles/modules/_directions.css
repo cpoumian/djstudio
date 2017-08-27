@@ -1,11 +1,10 @@
 #directions {
-	height: 100vh;
+	height: auto;
 	background-color: $mainWhite;
 
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/medium/vinyl-2-B&W-1280.jpg");
 		background-size: cover;
-		height: 60vh;
 	} /* background image - atSmall */
 
 	.wrapper {
@@ -28,15 +27,18 @@
 			padding-top: $spaceDbl;
 
 			.address {
-				width: $boxSize;	
+				/*width: $boxSize;*/
+                width: 100%;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				padding-bottom: $spaceDbl;
+                text-align: center;
 			}
 
 			#map {
-				width: $boxSize;
+				/*width: $boxSize;*/
+              width: auto;
 				padding-bottom: $spaceDbl;
 			}
 
@@ -55,7 +57,6 @@
 				line-height: $lineHeight;
 				/*text-align: center;*/
 				margin: $spaceHlf 0;
-				max-width: 90%;
 			}
 
 			@mixin atSmall {
@@ -65,7 +66,8 @@
 				min-width: $boxSize;
 
 				.address {
-					padding-bottom: $spaceStd;	
+					padding-bottom: $spaceStd;
+                    text-align: center;
 				}
 
 				#map {
@@ -95,6 +97,10 @@
 				#map {
 					padding-bottom: 0;
 				}
+
+              .address {
+                text-align: left;
+              }
 
 			} /* .text-box @mixin atMedium */
 			
