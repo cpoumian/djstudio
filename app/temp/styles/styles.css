@@ -954,7 +954,6 @@ img {
 /* .brand */
 
 #about {
-	height: 100vh;
 	background-color: #FFF; /* .text-box */
 
 }
@@ -1057,8 +1056,8 @@ img {
 }
 
 		#about .text-box p {
-			line-height: 4.2rem;
 			width: 50%;
+            font-size: calc(2rem - 0.5rem);
 		}
 
 		#about .text-box .social {
@@ -1096,6 +1095,7 @@ img {
 			margin-bottom: 0;
 			width: 75%;
 			text-align: left;
+            line-height: 4.2rem;
 		}
 
 		#about .text-box .social {
