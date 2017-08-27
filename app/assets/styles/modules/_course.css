@@ -66,7 +66,7 @@
 			}
 
 		@mixin atSmall {
-			width: $boxSizeMedium;
+			max-width: $boxSizeMedium;
 			min-width: $boxSizeSmall;
 			margin-bottom: 0;
 			padding: 0;

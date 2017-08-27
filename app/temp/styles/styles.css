@@ -1553,7 +1553,7 @@ img {
 @media (min-width: 549px) {
 
 #course .text-box {
-			width: 600px;
+			max-width: 600px;
 			min-width: 200px;
 			margin-bottom: 0;
 			padding: 0
