@@ -1,10 +1,11 @@
 #directions {
-	height: auto;
+	height: 100vh;
 	background-color: $mainWhite;
 
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/medium/vinyl-2-B&W-1280.jpg");
 		background-size: cover;
+		height: 60vh;
 	} /* background image - atSmall */
 
 	.wrapper {
@@ -37,8 +38,7 @@
 			}
 
 			#map {
-				/*width: $boxSize;*/
-              width: auto;
+				width: $boxSize;
 				padding-bottom: $spaceDbl;
 			}
 

@@ -1,15 +1,14 @@
 #courses, #services {
-	height: auto;
 
 	@mixin atSmall {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		height: 50vh;
+		padding: $spaceDbl 0;
 	}
 
 	@mixin atMedium {
-		height: 50vh;
+
 	}
 
 .wrapper {

@@ -60,7 +60,7 @@
 
 		p {
 			width: 50%;
-            font-size: calc($textSize - 0.5rem);
+            font-size: calc($textSize - 0.2rem);
 		}
 
 		.social {
@@ -80,8 +80,6 @@
 		h2 {
 			align-self: flex-start;
 			font-size: $heading;
-			/*margin-top: $spaceStd;*/				
-
 		}
 
 		p {
@@ -94,7 +92,6 @@
 		}
 
 		.social {
-			/*display: none;*/
 			align-self: flex-end;
 			margin: $spaceStd 0;
 		}

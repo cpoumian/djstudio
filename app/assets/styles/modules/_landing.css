@@ -2,13 +2,11 @@
 	display: block;
 	position: relative;
 	background-color: $mainBlack;
-    padding: 8rem 0;
+	height: 100vh;
 
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/large/mixing-deep-main-L.jpg");
 		background-size: cover;
-        height: 100vh;
-        padding: 0;
 	} /* background image - atSmall */
 
 	@mixin atSmallDouble {

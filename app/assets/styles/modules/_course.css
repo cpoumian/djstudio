@@ -1,8 +1,18 @@
 #course {
 	position: relative;
+
+	&.page-section {
+		padding: 5rem 0;
+	}
+
 	/*height: 100vh;*/
 
 	@mixin atSmall {
+
+		&.page-section {
+			padding: $spaceStd 0;
+		}
+		
 		height: 75vh;
 	}
 
@@ -28,7 +38,6 @@
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
-        padding: 5rem;
 
 		@mixin atSmall {
 			height: 75%;

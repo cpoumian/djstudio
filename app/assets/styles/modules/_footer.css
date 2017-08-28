@@ -4,8 +4,9 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	padding: $spaceStd;
+	padding: $spaceDbl $spaceStd;
 	background-color: $mainBlack;
+	/*height: 100vh;*/
 
 	@mixin atSmall {
 		justify-content: space-between;
@@ -13,8 +14,9 @@
 	}
 
 	@mixin atMedium {
-		/*height: 55vh;*/
+		padding: $spaceStd;
 		display: block;
+		/*height: 55vh;*/
 	}
 
 	&__logo {
