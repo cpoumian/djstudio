@@ -1,12 +1,14 @@
 .landing {
 	display: block;
 	position: relative;
-	height: 100vh;
 	background-color: $mainBlack;
+    padding: 8rem 0;
 
 	@mixin atSmall {
 		background: url("../../assets/images/backgrounds/large/mixing-deep-main-L.jpg");
 		background-size: cover;
+        height: 100vh;
+        padding: 0;
 	} /* background image - atSmall */
 
 	@mixin atSmallDouble {

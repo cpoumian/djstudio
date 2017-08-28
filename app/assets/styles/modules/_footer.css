@@ -1,5 +1,5 @@
 .footer {
-	height: 100vh;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -9,11 +9,11 @@
 
 	@mixin atSmall {
 		justify-content: space-between;
-		height: 50vh;
+		/*height: 50vh;*/
 	}
 
 	@mixin atMedium {
-		height: 55vh;
+		/*height: 55vh;*/
 		display: block;
 	}
 
@@ -54,8 +54,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding-left: $spaceStd;
-		padding-right: $spaceStd;
+		/*padding-left: $spaceStd;
+		padding-right: $spaceStd;*/
 
 		@mixin atSmall {
 			flex-direction: row;
