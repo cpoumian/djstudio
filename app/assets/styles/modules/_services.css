@@ -15,11 +15,13 @@
 	flex-direction: column;
 	padding-top: 0;
 	padding-bottom: $spaceStd;
+	margin-top: $spaceHlf;
 
 	@mixin atSmall {
 		justify-content: space-around;
 		align-items: center;
 		padding: 0 $spaceStd;
+		margin-top: 0;
 	}
 
 } /* .wrapper */

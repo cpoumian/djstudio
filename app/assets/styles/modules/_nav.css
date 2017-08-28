@@ -11,11 +11,6 @@
 		width: 100%;
 		height: $navHeightLarge;
 
-/*		&--dark {
-			background-color: $mainBlack;
-			z-index: 1;
-		}*/
-
 	} /* .nav atSmall */
 
 	@mixin atMedium {
@@ -24,10 +19,13 @@
 
 	.btn {
 		color: $mainBlack;
-		margin: auto 0;
+		
 		@mixin atSmall {
+			margin-top: auto;
+			margin-bottom: auto;
 			margin-right: $spaceStd;
 		}
+
 	} /* .btn in .nav */
 
 } /* .nav */
@@ -50,7 +48,7 @@
 		@mixin atSmall {
 			margin-bottom: $spaceHlf;
 			margin-top: 0;
-		} /* 3rd nav-el atSmall */
+		} /* nav-el atSmall */
 
 		@mixin atMedium {
 

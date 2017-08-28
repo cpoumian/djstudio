@@ -12,92 +12,97 @@
 	}
 
 
-.wrapper {
-	height: 100%;
-	margin: 0 auto;
-	flex-direction: column;
-	justify-content: flex-start;
+	.wrapper {
+		height: 100%;
+		margin: 0 auto;
+		flex-direction: column;
+		justify-content: flex-start;
 
-	@mixin atSmall {
-		flex-direction: row;
-		justify-content: center;
+		@mixin atSmall {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+
+	} /* .wrapper */
+
+	.text-box {
+		justify-content: space-around;
 		align-items: center;
-	}
-
-	@mixin atMedium {
-
-	}
-
-} /* .wrapper */
-
-.text-box {
-	justify-content: space-around;
-	align-items: center;
-	padding-top: $spaceDbl;
-	padding-bottom: $spaceDbl;
-	height: 80%;
-
-	h2 {
-		color: $lightBlue;
-		margin-top: 0;
-		margin-bottom: $spaceHlf;
-		font-size: $headingLarge;
-		font-weight: $weightSemibold;
-		align-self: center;
-	}
-
-	p {
-		font-size: $textSize;
-		font-weight: $weightLight;
-		line-height: $lineHeight;
-		text-align: center;
-		margin: $spaceHlf 0;
-		max-width: 90%;
-	} /* .text-box p */
-
-	@mixin atSmall {
-		justify-content: center;
-
-		p {
-			width: 50%;
-            font-size: calc($textSize - 0.2rem);
-		}
-
-		.social {
-			margin: $spaceStd 0;
-		}
-					
-	} /* .text-box @mixin atSmall */
-
-	@mixin atMedium {
-		align-items: flex-start;
-		margin: $spaceStd 0;
-		padding: $spaceDbl;
-		width: $boxSizeLarge;
-		min-width: $boxSize;
-		height: 65%;
+		padding-top: $spaceDbl;
+		padding-bottom: $spaceDbl;
+		height: 80%;
 
 		h2 {
-			align-self: flex-start;
-			font-size: $heading;
+			color: $lightBlue;
+			margin-top: 0;
+			margin-bottom: $spaceHlf;
+			font-size: $headingLarge;
+			font-weight: $weightSemibold;
+			align-self: center;
 		}
 
 		p {
 			font-size: $textSize;
-			margin-top: 0;
-			margin-bottom: 0;
-			width: 75%;
-			text-align: left;
-            line-height: $lineHeightLarge;
-		}
+			font-weight: $weightLight;
+			line-height: $lineHeight;
+			text-align: center;
+			margin: $spaceHlf 0;
+			max-width: 90%;
+		} /* .text-box p */
 
 		.social {
-			align-self: flex-end;
-			margin: $spaceStd 0;
+			width: 100%;
+			justify-content: space-around;
+			margin: $spaceHlf 0;
 		}
 
-	} /* .text-box @mixin atMedium */
-	
-} /* .text-box */
+		@mixin atSmall {
+			justify-content: center;
+
+			p {
+				width: 75%;
+	      font-size: calc($textSize - 0.2rem);
+	      font-weight: $weightRegular;
+			}
+
+			.social {
+				margin: $spaceStd 0;
+				width: 75%;
+			}
+						
+		} /* .text-box @mixin atSmall */
+
+		@mixin atMedium {
+			align-items: flex-start;
+			margin: $spaceStd 0;
+			padding: $spaceDbl;
+			width: $boxSizeLarge;
+			min-width: $boxSize;
+			height: 65%;
+
+			h2 {
+				align-self: flex-start;
+				font-size: $heading;
+			}
+
+			p {
+				font-size: $textSize;
+				margin-top: 0;
+				margin-bottom: 0;
+				width: 75%;
+				text-align: left;
+	            line-height: $lineHeightLarge;
+			}
+
+			.social {
+				justify-content: flex-end;
+				align-self: flex-end;
+				margin: $spaceStd 0;
+			}
+
+		} /* .text-box @mixin atMedium */
+		
+	} /* .text-box */
 
 } /* #about */
