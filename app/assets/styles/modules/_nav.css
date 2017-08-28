@@ -1,0 +1,84 @@
+.nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+
+	@mixin atSmall {
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: $transBlack;
+		width: 100%;
+		height: $navHeightLarge;
+
+/*		&--dark {
+			background-color: $mainBlack;
+			z-index: 1;
+		}*/
+
+	} /* .nav atSmall */
+
+	@mixin atMedium {
+		height: $navHeight;
+	} /* .nav atMedium */
+
+	.btn {
+		color: $mainBlack;
+		margin: auto 0;
+		@mixin atSmall {
+			margin-right: $spaceStd;
+		}
+	} /* .btn in .nav */
+
+} /* .nav */
+
+.nav-el {
+	color: $mainWhite;
+	padding: $spaceHlf $spaceStd;
+	margin-bottom: $spaceHlf;
+	margin-top: $spaceHlf;
+	font-size: $textSize;
+	font-weight: $weightRegular;
+	text-decoration: none;
+	transition: all $moderate;
+	margin-bottom: $spaceStd;
+
+		&:hover {
+			color: $mainYellow;
+		} /* .nav-el at hover */
+
+		@mixin atSmall {
+			margin-bottom: $spaceHlf;
+			margin-top: 0;
+		} /* 3rd nav-el atSmall */
+
+		@mixin atMedium {
+
+			&:nth-child(-n+3) {
+				transform: translateY(1rem);
+
+				&:after {
+					content: "";
+			    display: block;
+			    height: 5px;
+			    width: 0;
+			    margin: .5rem .5rem;
+			    transition: width $time-half ease-out, 
+			    background-color $time-half ease-out;
+				} /* &:after */
+
+				&:hover:after {
+			    width: 100%;
+			    background: $mainYellow;
+			    opacity: 0.75;
+			  } /* &:hover:after */
+
+		  } /*&:nth-child(-n+3)*/
+
+	  } /*@mixin atMedium*/
+
+	} /* .nav-el */
+
+
+
+

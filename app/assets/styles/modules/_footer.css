@@ -1,0 +1,138 @@
+.footer {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: $spaceStd;
+	background-color: $mainBlack;
+
+	@mixin atSmall {
+		justify-content: space-between;
+		/*height: 50vh;*/
+	}
+
+	@mixin atMedium {
+		/*height: 55vh;*/
+		display: block;
+	}
+
+	&__logo {
+	width: 260px;
+	max-width: 320px;
+
+		@mixin atSmall{
+			width: 400px;
+			min-width: 320px;
+			margin: $spaceStd;
+		} /* &_logo atSmall */
+
+		@mixin atMedium {
+			display: inline-block;
+		}
+
+	} /* &__logo */
+
+	.social {
+		justify-content: space-between;
+		width: 100%;
+
+		@mixin atSmall {
+			justify-content: space-around;
+		}
+
+		@mixin atMedium {
+			width: 33%;
+			float: right;
+			justify-content: space-between;
+			margin-top: $spaceDbl;
+		}
+
+	} /* .social */
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		/*padding-left: $spaceStd;
+		padding-right: $spaceStd;*/
+
+		@mixin atSmall {
+			flex-direction: row;
+			width: 100%;
+		}
+
+		@mixin atMedium {
+			
+		}
+
+	} /* .container */
+
+	&__info {
+
+		p {
+		color: $mainWhite;
+		font-size: $textSizeSmall;
+		font-weight: $weightRegular;
+		line-height: $lineHeightLarge;
+		text-align: center;
+
+			@mixin atSmall {
+				font-size: $textSize;
+				text-align: left;
+				margin: $spaceDbl $spaceStd;
+			}
+		} /* p */
+
+	} /* &__info */
+
+	 &__promo {
+
+		 	p {
+			color: $mainWhite;
+			font-size: $textSizeXsmall;
+			font-weight: $weightLight;
+			line-height: $lineHeightLarge;
+			text-align: center;
+
+				@mixin atSmall {
+					text-align: right;
+					margin: $spaceDbl $spaceStd;
+				}
+				
+				@mixin atMedium {
+					margin-right: $spaceDbl;
+				}
+
+			} /* p */
+
+	 } /* &__promo */
+
+	a {
+		text-decoration: none;
+		font-size: $textSizeSmall;
+		color: $mainYellow;
+		
+		@mixin atMedium {
+
+				&:after {
+					content: "";
+			    display: block;
+			    height: 5px;
+			    width: 0;
+			    margin: .5rem .5rem;
+			    transition: width $time-half ease-out, 
+			    background-color $time-half ease-out;
+				} /* &:after */
+
+				&:hover:after {
+			    width: 100%;
+			    background: $mainYellow;
+			    opacity: 0.75;
+			  } /* &:hover:after */
+
+	  } /* @mixin atMedium */
+
+	} /* a */
+
+} /* .footer */

@@ -1,0 +1,77 @@
+#courses, #services {
+	height: auto;
+
+	@mixin atSmall {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		height: 50vh;
+	}
+
+	@mixin atMedium {
+		height: 50vh;
+	}
+
+.wrapper {
+	flex-direction: column;
+	padding-top: 0;
+	padding-bottom: $spaceStd;
+
+	@mixin atSmall {
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 $spaceStd;
+	}
+
+} /* .wrapper */
+
+h2 {
+	font-size: $headingXsmall;
+	text-align: center;
+	margin: $spaceStd 0;
+
+	@mixin atSmall {
+		text-align: left;
+		margin: $spaceQtr 0 $spaceDbl 0;
+		font-size: $headingSmall;
+	}
+
+	@mixin atMedium {
+		margin: $spaceStd 0 $spaceDbl 0;
+		font-size: $heading;	
+	}
+
+} /* h2 */
+
+a {
+	color: $mainWhite;
+	text-decoration: none;
+	transition: all $moderate;
+
+	&:hover {
+			color: $mainYellow;
+		} /* .nav-el at hover */
+
+		@mixin atMedium {
+
+				&:after {
+					content: "";
+			    display: block;
+			    height: 5px;
+			    width: 0;
+			    margin: .5rem .5rem;
+			    transition: width $time-half ease-out, 
+			    background-color $time-half ease-out;
+				} /* &:after */
+
+				&:hover:after {
+			    width: 100%;
+			    background: $mainYellow;
+			    opacity: 0.75;
+			  } /* &:hover:after */
+
+	  } /*@mixin atMedium*/
+	
+	} /* a */
+
+} /* #services */

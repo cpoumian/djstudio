@@ -1,0 +1,95 @@
+/* Media queries */
+
+	/* Small screens */
+	@define-mixin atMobile {
+		@media (max-width: 550px) {
+			@mixin-content;
+		}
+	}
+	
+	@define-mixin atMobileDouble {
+		@media (max-width: 549px) and (min-resolution: 192dpi) {
+			@mixin-content;
+		}
+	}
+	
+	@define-mixin atSmall {
+		@media (min-width: 549px) {
+			@mixin-content;
+		}
+	}
+	
+	@define-mixin atSmallDouble {
+		@media (min-width: 550px) and (min-resolution: 192dpi) {
+			@mixin-content;
+		}
+	}
+
+	/* Medium screens */
+	@define-mixin atMedium {
+		@media (min-width: 800px) {
+			@mixin-content;
+		}	
+	}
+	@define-mixin atMediumDouble {
+		@media (min-width: 800px) and (min-resolution: 192dpi) {
+			@mixin-content;
+		}	
+	}
+
+	/* Large screens */
+	@define-mixin atLarge {
+		@media (min-width: 1200px) {
+			@mixin-content;
+		}	
+	}
+
+	@define-mixin atLargeDouble {
+		@media (min-width: 1200px) and (min-resolution: 192dpi){
+			@mixin-content;
+		}	
+	}
+
+/* Back images */
+
+@define-mixin productionBG {
+
+	@mixin atSmall {
+		background: url("../../assets/images/backgrounds/large/groove-L.jpg");
+		background-size: cover;
+	} /* background image - atSmall */
+
+	@mixin atSmallDouble {
+		background: url("../../assets/images/backgrounds/large/groove-L@2x.jpg");
+		background-size: cover;
+	} /* background image - atSmallDouble */
+
+} /* @define-mixin productionBG */
+
+@define-mixin djMixBG {
+
+	@mixin atSmall {
+		background: url("../../assets/images/backgrounds/large/mixing-mid-fem-L.jpg");
+		background-size: cover;
+	} /* background image - atSmall */
+
+	@mixin atSmallDouble {
+		background: url("../../assets/images/backgrounds/large/mixing-mid-fem-L@2x.jpg");
+		background-size: cover;
+	} /* background image - atSmallDouble */
+	
+} /* @define-mixin djMixBG */
+
+@define-mixin workshopsBG {
+
+	@mixin atSmall {
+		background: url("../../assets/images/backgrounds/large/mixing-deep-male-L.jpg");
+		background-size: cover;
+	} /* background image - atSmall */
+
+	@mixin atSmallDouble {
+		background: url("../../assets/images/backgrounds/large/mixing-deep-male-L@2x.jpg");
+		background-size: cover;
+	} /* background image - atSmallDouble */
+	
+} /* @define-mixin workshopsBG */

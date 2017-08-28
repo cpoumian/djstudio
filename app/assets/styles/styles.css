@@ -1,14 +1,25 @@
-$mainBlue: #2f5574;
+@import "normalize.css";
 
-body {
-	color: $mainBlue;
-	padding: 15px;
-	columns: 300px 2;
-}
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
 
-.box {
-	a {
-		display: block;
-		padding: 10px;
-	}
-}
+@import "modules/_btn";
+@import "modules/_wrapper";
+@import "modules/_page-section";
+@import "modules/_text-box";
+@import "modules/_scroll-to-top";
+@import "modules/_header";
+@import "modules/_landing";
+@import "modules/_nav";
+@import "modules/_brands";
+@import "modules/_about";
+@import "modules/_item";
+@import "modules/_social-icons";
+@import "modules/_item-box";
+@import "modules/_services";
+@import "modules/_course";
+@import "modules/_directions";
+@import "modules/_footer";
+@import "modules/_reveal-item";
+

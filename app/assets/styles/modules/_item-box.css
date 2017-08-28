@@ -1,0 +1,27 @@
+.item-box {
+	position: relative;
+	padding: $spaceHlf;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: $spaceDbl;
+	
+
+	@mixin atSmall {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		margin-bottom: 0;
+	}
+
+	@mixin atMedium {
+		justify-content: space-between;
+		align-items: center;
+		width: 80%;
+		max-width: 80%;
+		flex-grow: 1;
+	}	
+
+} /* item-box */

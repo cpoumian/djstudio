@@ -1,0 +1,26 @@
+.btn {
+	background-color: $mainYellow;
+	color: $mainBlack;
+	text-decoration: none;
+	padding: $spaceQtr $spaceHlf;
+	display: inline-block;
+	transition: all $moderate;
+
+	&:hover {
+		background-color: $darkYellow;
+		color: $mainYellow;
+	}
+
+	&--blue {
+		background-color: $lightBlue;
+	}
+
+	&--large {
+		font-size: $textSize;
+		font-weight: $weightBold;
+		line-height: $lineHeight;
+		padding: $spaceHlf $spaceDbl;
+		border-radius: 15px;
+	}
+
+} /* .btn */

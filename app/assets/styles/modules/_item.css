@@ -1,0 +1,32 @@
+.item {	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: nowrap;
+	max-width: 100%;
+	margin: $spaceQtr 0;
+
+	@mixin atSmall {
+		margin: 0 0;
+	}
+
+} /* .item */
+
+.icon {
+	width: $iconSize;
+	min-width: $iconSizeSmall;
+
+	@mixin atSmall {
+		width: $iconSizeLarge;			
+	}
+
+} /* .icon */
+
+.service {
+	font-size: $textSizeSmall;
+
+	@mixin atSmall {
+		font-size: $textSize;			
+	}
+
+} /* .service */

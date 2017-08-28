@@ -1,0 +1,71 @@
+.brands-container {
+		display: none;
+
+		@mixin atSmall {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			align-items: center;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: $transBlack;
+			width: 100%;
+			height: 15%;
+		} /* brands-container atSmall */
+
+		@mixin atMedium {
+			width: 50%;
+		}
+
+	} /* .brands-container */
+
+	.brand {
+		display: none;
+
+		@mixin atSmall {
+		display: inline-block;
+		margin: auto $spaceHlf;
+
+				
+				&--pioneer {
+					width: 158px;
+					height: 24px;
+				}
+
+				&--native {
+					width: 286px;
+					height: 100px;
+				}
+				
+				&--ableton {
+					width: 157.5px;
+					height: 25px;	
+				}
+
+				&--fl-studio {
+					width: 53px;
+					height: 71px;
+				}
+
+				&--tracktion {
+					width: 150px;
+					height: 36px;
+				}
+
+				&--xfer {
+					width: 92px;
+					height: 64px;
+				}
+
+				&--serato {
+					width: 120px;
+					height: 28px;					
+				}
+
+				flex: 0 1 auto;
+
+		} /* @mixin atSmall */
+
+	} /* .brand */

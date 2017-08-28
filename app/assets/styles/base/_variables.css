@@ -1,0 +1,62 @@
+/* Colors */
+$mainYellow: #FFFF87;
+$darkYellow: #A0A054;
+$mainBlack:  #000;
+$transBlack: rgba(0,0,0, 0.65);
+$mainWhite:  #FFF;
+$lightBlue:  #33A4DE;
+
+/* Layout */
+$lineHeightLarge: 4.2rem;
+$lineHeight: 3.2rem;
+$lineHeightSmall: 1.2rem;
+
+$spaceQtr: .6rem;
+$spaceHlf: 1.12rem;
+$spaceStd: 2.25rem;
+$spaceDbl: 4.5rem;
+
+/* Font sizes */
+$headingLarge: 5.2rem;
+$heading: 4.5rem;
+$headingSmall: 3.8rem;
+$headingXsmall: 3rem;
+$textSize: 2rem;
+$textSizeSmall: 1.8rem;
+$textSizeXsmall: 1.5rem;
+
+/*Font weights*/
+$weightLight: 300;
+$weightRegular: 400;
+$weightSemibold: 500;
+$weightBold: 600;
+$weightExtrabold: 700;
+
+/* Boxes */
+$boxSizeSmall: 200px;
+$boxSize: 400px;
+$boxSizeMedium: 600px;
+$boxSizeLarge: 800px;
+
+/* Navigation */
+$navHeight: 100px;
+$navHeightLarge: 200px;
+
+/* Buttons */
+$btnSizeSmall: 100px;
+$btnSize: 150px;
+$btnSizeLarge: 260px;
+
+/* Icons */
+$iconSize: 65px;
+$iconSizeSmall: 50px;
+$iconSizeLarge: 85px;
+
+/* transition speeds */
+$moderate: .4s;
+
+/* Interaction */
+$time-base: 0.5s;
+$time-double: calc($time-base * 2);
+$time-half: calc($time-base / 2);
+$time-quarter: calc($time-base / 4);

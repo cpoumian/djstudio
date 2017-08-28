@@ -1,0 +1,165 @@
+#course {
+	position: relative;
+	/*height: 100vh;*/
+
+	@mixin atSmall {
+		height: 75vh;
+	}
+
+	@mixin atMedium {
+		height: 95vh;
+	}
+
+	&.dj-mix {
+		@mixin djMixBG;
+	}
+
+	&.production {
+		@mixin productionBG;
+	} /* &.production */
+
+		&.workshops {
+		@mixin workshopsBG;
+	}
+
+	.wrapper {
+		height: 100%;
+		margin: 0 auto;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+        padding: 5rem;
+
+		@mixin atSmall {
+			height: 75%;
+			justify-content: space-around;
+		}
+
+		@mixin atMedium {
+			height: 100%;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+
+	} /* .wrapper */
+
+	.text-box {
+			flex: 0 1 auto;
+			margin-bottom: 5rem;
+            text-align: center;
+
+			h2 {
+				font-size: $headingSmall;
+				font-weight: $weightSemibold;
+				color: $mainBlack;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+
+			p {
+				font-size: $textSizeSmall;
+				font-weight: $weightLight;
+				line-height: $lineHeight;
+				margin-bottom: 0;
+			}
+
+		@mixin atSmall {
+			max-width: $boxSizeMedium;
+			min-width: $boxSizeSmall;
+			margin-bottom: 0;
+			padding: 0;
+		
+			h2 {
+				font-size: $headingXsmall;
+				font-weight: $weightSemibold;
+				color: $mainWhite;
+				opacity: .9;
+				background-color: $mainBlack;
+				margin: 0;
+				width: 100%;
+				max-width: calc(100% - $spaceStd); 
+				padding: $spaceStd 0 $spaceStd $spaceStd;
+			}
+
+			p {
+				font-size: $textSize;
+				font-weight: $weightLight;
+				line-height: $lineHeight;
+				text-align: left;
+				margin: $spaceHlf 0;
+				padding: $spaceStd;
+			}
+
+			li {
+				font-size: $textSize;
+				font-weight: $weightLight;
+				line-height: $lineHeightSmall;
+				list-style: none;
+				text-align: left;
+				margin: $spaceHlf 0;
+				padding: $spaceStd;	
+			}
+
+		} /* .text-box @mixin atSmall */
+
+		@mixin atMedium {
+			h2{
+				
+			}
+
+			p {
+				margin-top: $spaceStd;
+				margin-bottom: $spaceStd;
+				line-height: $lineHeightLarge;
+			}
+
+		} /* .text-box @mixin atMedium */
+
+	} /* .text-box */
+
+	.btn--large {
+		width: $btnSize;
+		min-width: $btnSizeSmall;
+		font-size: $textSizeSmall;
+		text-align: center;
+		margin-left: 0;
+
+		@mixin atSmall {
+			align-self: center;
+			width: $btnSize;
+			min-width: $btnSizeSmall;
+			font-size: $textSize;
+			margin-left: $spaceStd;
+			margin-right: $spaceStd;
+		}
+
+	} /* .btn--large */
+
+	.brands-container {
+		
+		@mixin atSmall {
+			left: initial;
+			right: 0;
+			opacity: .8;
+		} /* @mixin atSmall */
+
+		.brand {
+			display: inline-block;
+			margin: 0 $spaceQtr;
+		}
+
+	} /* .brands-container */
+
+	&.production {
+		@mixin atMobile {
+			background-color: $mainBlack;
+			
+			.text-box, h2, p {
+				background-color: $mainBlack;
+				color: $mainWhite;
+			}
+		} /*@mixin atMobile*/
+
+	} /* &.production */
+
+} /* #course */
