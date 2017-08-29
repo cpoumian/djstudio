@@ -42,12 +42,14 @@
 		@mixin atSmall {
 			height: 75%;
 			justify-content: space-around;
+			margin-top: $spaceDbl;
 		}
 
 		@mixin atMedium {
 			height: 100%;
 			flex-direction: row;
 			justify-content: space-around;
+			margin-top: 0;
 		}
 
 	} /* .wrapper */
@@ -91,22 +93,12 @@
 			}
 
 			p {
-				font-size: $textSize;
+				font-size: $textSizeSmall;
 				font-weight: $weightLight;
 				line-height: $lineHeight;
 				text-align: left;
 				margin: $spaceHlf 0;
 				padding: $spaceStd;
-			}
-
-			li {
-				font-size: $textSize;
-				font-weight: $weightLight;
-				line-height: $lineHeightSmall;
-				list-style: none;
-				text-align: left;
-				margin: $spaceHlf 0;
-				padding: $spaceStd;	
 			}
 
 		} /* .text-box @mixin atSmall */

@@ -53,9 +53,8 @@
 
 			p {
 				font-size: $textSize;
-				font-weight: $weightLight;
+				font-weight: $weightRegular;
 				line-height: $lineHeight;
-				/*text-align: center;*/
 				margin: $spaceHlf 0;
 			}
 
