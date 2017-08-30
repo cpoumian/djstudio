@@ -9,4 +9,18 @@
 		opacity: 0.5;
 		}
 
-} /* &:after */
+} /* .horizontal-divider */
+
+.vertical-divider {
+	display: none;
+
+	@mixin atSmall {
+		align-self: center;
+		display: block;
+		height: 15rem;
+		width: 1px;
+		background: $mainWhite;
+		opacity: 0.5;
+		}
+
+} /* .horizontal-divider */

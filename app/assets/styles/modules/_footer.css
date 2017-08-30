@@ -61,10 +61,6 @@
 			width: 100%;
 		}
 
-		@mixin atMedium {
-			
-		}
-
 	} /* .container */
 
 	&__info {
@@ -90,7 +86,7 @@
 		 	p {
 			color: $mainWhite;
 			font-size: $textSizeXsmall;
-			font-weight: $weightLight;
+			font-weight: $weightRegular;
 			line-height: $lineHeightLarge;
 			text-align: center;
 
