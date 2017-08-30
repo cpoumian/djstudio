@@ -6,17 +6,14 @@
 	align-items: center;
 	padding: $spaceDbl $spaceStd;
 	background-color: $mainBlack;
-	/*height: 100vh;*/
 
 	@mixin atSmall {
 		justify-content: space-between;
-		/*height: 50vh;*/
 	}
 
 	@mixin atMedium {
 		padding: $spaceStd;
 		display: block;
-		/*height: 55vh;*/
 	}
 
 	&__logo {
@@ -41,13 +38,13 @@
 
 		@mixin atSmall {
 			justify-content: space-around;
-		}
+		} /* .social atSmall */
 
 		@mixin atMedium {
 			width: 33%;
 			float: right;
 			justify-content: space-between;
-			margin-top: $spaceDbl;
+			margin-top: $spaceStd;
 		}
 
 	} /* .social */
@@ -110,7 +107,7 @@
 
 	 } /* &__promo */
 
-	a {
+	.mail-link {
 		text-decoration: none;
 		font-size: $textSizeSmall;
 		color: $mainYellow;

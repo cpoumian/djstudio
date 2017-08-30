@@ -1,0 +1,12 @@
+.horizontal-divider {
+	display: none;
+
+	@mixin atSmall {
+		display: inline-block;
+		height: 1px;
+		width: 100%;
+		background: $mainWhite;
+		opacity: 0.5;
+		}
+
+} /* &:after */

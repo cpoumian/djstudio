@@ -3,6 +3,7 @@
 	color: $mainBlack;
 	text-decoration: none;
 	padding: $spaceQtr $spaceHlf;
+	border-radius: 5px;
 	display: inline-block;
 	transition: all $moderate;
 
@@ -17,8 +18,12 @@
 		line-height: $lineHeight;
 		text-align: center;
 		padding: $spaceHlf $spaceStd;
-		margin: $spaceStd 0;
-		border-radius: 20px;
+		margin: 0 0 $spaceStd 0;
+		border-radius: 10px;
+
+		@mixin atSmall {
+			margin: $spaceStd 0;
+		}
 	}
 
 	&--large {
@@ -26,13 +31,13 @@
 		font-weight: $weightBold;
 		line-height: $lineHeight;
 		padding: $spaceHlf $spaceDbl;
-		border-radius: 15px;
+		border-radius: 20px;
 	}
 
 } /* .btn */
 
 .btn-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
