@@ -29,15 +29,15 @@
 	.text-box {
 		justify-content: space-around;
 		align-items: center;
-		padding-top: $spaceDbl;
-		padding-bottom: $spaceDbl;
+		padding-top: $spaceStd;
+		padding-bottom: $spaceStd;
 		height: 80%;
 
 		h2 {
 			color: $lightBlue;
 			margin-top: 0;
 			margin-bottom: $spaceHlf;
-			font-size: $headingLarge;
+			font-size: $headingSmall;
 			font-weight: $weightSemibold;
 			align-self: center;
 		}
@@ -46,7 +46,7 @@
 			font-size: $textSize;
 			font-weight: $weightLight;
 			line-height: $lineHeight;
-			text-align: center;
+			text-align: left;
 			margin: $spaceHlf 0;
 			max-width: 90%;
 		} /* .text-box p */
@@ -59,15 +59,21 @@
 
 		@mixin atSmall {
 			justify-content: center;
+			padding-top: $spaceHlf;
+			padding-bottom: $spaceHlf;
+			height: 80%;
+
+			h2 {
+				margin: 0 $spaceStd $spaceStd $spaceStd;
+			}
 
 			p {
-				width: 75%;
-	      font-size: calc($textSize - 0.2rem);
-	      font-weight: $weightRegular;
+	      font-size: $textSizeLarge;
+	      font-weight: $weightLight;
 			}
 
 			.social {
-				margin: $spaceStd 0;
+				margin: $spaceDbl 0 0 0;
 				width: 75%;
 			}
 						
@@ -82,8 +88,8 @@
 			height: 65%;
 
 			h2 {
+				margin-left: 0; 
 				align-self: flex-start;
-				font-size: $heading;
 			}
 
 			p {

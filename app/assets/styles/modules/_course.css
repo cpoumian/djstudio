@@ -55,7 +55,7 @@
 	.text-box {
 			flex: 0 1 auto;
 			margin-bottom: 5rem;
-            text-align: center;
+      text-align: left;
 
 			h2 {
 				font-size: $headingSmall;
@@ -92,7 +92,7 @@
 
 			p {
 				font-size: $textSizeSmall;
-				font-weight: $weightLight;
+				font-weight: $weightRegular;
 				line-height: $lineHeight;
 				text-align: left;
 				margin: $spaceHlf 0;
@@ -102,13 +102,13 @@
 		} /* .text-box @mixin atSmall */
 
 		@mixin atMedium {
-			h2{
-				
-			}
+
+			margin-bottom: $spaceDbl;
 
 			p {
-				margin-top: $spaceStd;
-				margin-bottom: $spaceStd;
+				font-size: $textSizeXsmall;
+				margin-top: $spaceHlf;
+				margin-bottom: $spaceHlf;
 				line-height: $lineHeightLarge;
 			}
 
@@ -141,6 +141,10 @@
 			right: 0;
 			opacity: .8;
 		} /* @mixin atSmall */
+
+		@mixin atMedium {
+			width: 42.5%;
+		}
 
 		.brand {
 			display: inline-block;

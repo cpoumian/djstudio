@@ -28,13 +28,12 @@
 			padding-top: $spaceDbl;
 
 			.address {
-				/*width: $boxSize;*/
-                width: 100%;
+        width: 100%;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				padding-bottom: $spaceDbl;
-                text-align: center;
+        text-align: center;
 			}
 
 			#map {
@@ -97,9 +96,13 @@
 					padding-bottom: 0;
 				}
 
-              .address {
-                text-align: left;
-              }
+        .address {
+          text-align: left;
+        }
+
+        p {
+        	font-weight: $weightLight;
+        }
 
 			} /* .text-box @mixin atMedium */
 			

@@ -1040,8 +1040,8 @@ img {
 		-webkit-box-align: center;
 		    -ms-flex-align: center;
 		        align-items: center;
-		padding-top: 4.5rem;
-		padding-bottom: 4.5rem;
+		padding-top: 2.25rem;
+		padding-bottom: 2.25rem;
 		height: 80%; /* .text-box @mixin atMedium */
 		
 	}
@@ -1050,7 +1050,7 @@ img {
 			color: #33A4DE;
 			margin-top: 0;
 			margin-bottom: 1.12rem;
-			font-size: 5.2rem;
+			font-size: 3.8rem;
 			font-weight: 500;
 			-ms-flex-item-align: center;
 			    align-self: center;
@@ -1060,7 +1060,7 @@ img {
 			font-size: 2rem;
 			font-weight: 300;
 			line-height: 3.2rem;
-			text-align: center;
+			text-align: left;
 			margin: 1.12rem 0;
 			max-width: 90%;
 		}
@@ -1079,18 +1079,24 @@ img {
 #about .text-box {
 			-webkit-box-pack: center;
 			    -ms-flex-pack: center;
-			        justify-content: center
+			        justify-content: center;
+			padding-top: 1.12rem;
+			padding-bottom: 1.12rem;
+			height: 80%
 		
 	}
 
+			#about .text-box h2 {
+				margin: 0 2.25rem 2.25rem 2.25rem;
+			}
+
 			#about .text-box p {
-				width: 75%;
-	      font-size: calc(2rem - 0.2rem);
-	      font-weight: 400;
+	      font-size: 2.4rem;
+	      font-weight: 300;
 			}
 
 			#about .text-box .social {
-				margin: 2.25rem 0;
+				margin: 4.5rem 0 0 0;
 				width: 75%;
 			}
 		}
@@ -1112,9 +1118,9 @@ img {
 	}
 
 			#about .text-box h2 {
-				-ms-flex-item-align: start;
+				margin-left: 0; 
+				-ms-flex-item-align: start; 
 				    align-self: flex-start;
-				font-size: 4.5rem;
 			}
 
 			#about .text-box p {
@@ -1558,7 +1564,7 @@ img {
 			    -ms-flex: 0 1 auto;
 			        flex: 0 1 auto;
 			margin-bottom: 5rem;
-            text-align: center; /* .text-box @mixin atMedium */
+      text-align: left; /* .text-box @mixin atMedium */
 
 	}
 
@@ -1601,7 +1607,7 @@ img {
 
 			#course .text-box p {
 				font-size: 1.8rem;
-				font-weight: 300;
+				font-weight: 400;
 				line-height: 3.2rem;
 				text-align: left;
 				margin: 1.12rem 0;
@@ -1612,13 +1618,17 @@ img {
 /* .text-box @mixin atSmall */
 
 @media (min-width: 800px) {
-			#course .text-box h2{
-				
-			}
+
+#course .text-box {
+
+			margin-bottom: 4.5rem
+
+	}
 
 			#course .text-box p {
-				margin-top: 2.25rem;
-				margin-bottom: 2.25rem;
+				font-size: 1.6rem;
+				margin-top: 1.12rem;
+				margin-bottom: 1.12rem;
 				line-height: 4.2rem;
 			}
 		}
@@ -1661,6 +1671,14 @@ img {
 		}
 
 /* @mixin atSmall */
+
+@media (min-width: 800px) {
+
+#course .brands-container {
+			width: 42.5%
+
+	}
+		}
 
 #course .brands-container .brand {
 			display: inline-block;
@@ -1749,8 +1767,7 @@ img {
 		}
 
 #directions .text-box .address {
-				/*width: $boxSize;*/
-                width: 100%;
+        width: 100%;
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
@@ -1762,7 +1779,7 @@ img {
 				    -ms-flex-pack: center;
 				        justify-content: center;
 				padding-bottom: 4.5rem;
-                text-align: center;
+        text-align: center;
 			}
 
 #directions .text-box #map {
@@ -1839,9 +1856,13 @@ img {
 					padding-bottom: 0;
 				}
 
-              #directions .text-box .address {
-                text-align: left;
-              }
+        #directions .text-box .address {
+          text-align: left;
+        }
+
+        #directions .text-box p {
+        	font-weight: 300;
+        }
 		}
 
 /* #about */
@@ -2046,7 +2067,7 @@ img {
 
 .footer__promo p {
 			color: #FFF;
-			font-size: 1.5rem;
+			font-size: 1.6rem;
 			font-weight: 400;
 			line-height: 4.2rem;
 			text-align: center;
@@ -2075,34 +2096,11 @@ img {
 .footer .mail-link {
 		text-decoration: none;
 		font-size: 1.8rem;
-		color: #FFFF87; /* @mixin atMedium */
+		color: #FFFF87;
+		
+
 
 	}
-
-@media (min-width: 800px) {
-
-.footer .mail-link { /* &:after */ /* &:hover:after */
-
-	}
-
-				.footer .mail-link:after {
-					content: "";
-			    display: block;
-			    height: 5px;
-			    width: 0;
-			    margin: .5rem .5rem;
-			    -webkit-transition: width calc(0.5s / 2) ease-out, 
-			    background-color calc(0.5s / 2) ease-out;
-			    transition: width calc(0.5s / 2) ease-out, 
-			    background-color calc(0.5s / 2) ease-out;
-				}
-
-				.footer .mail-link:hover:after {
-			    width: 100%;
-			    background: #FFFF87;
-			    opacity: 0.75;
-			  }
-		}
 
 /* .footer */
 

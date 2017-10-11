@@ -21,9 +21,10 @@ $headingLarge: 5.2rem;
 $heading: 4.5rem;
 $headingSmall: 3.8rem;
 $headingXsmall: 3.2rem;
+$textSizeLarge: 2.4rem;
 $textSize: 2rem;
 $textSizeSmall: 1.8rem;
-$textSizeXsmall: 1.5rem;
+$textSizeXsmall: 1.6rem;
 
 /*Font weights*/
 $weightLight: 300;
